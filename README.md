@@ -1,4 +1,5 @@
-# 30 Days Of Streamlit 🎈
+# WIP
+# 30 Days Of Streamlit en español! 🎈
 
 <img src='3AF34648-C61D-47CE-9E56-C496C5A7C240.jpeg' height=250>
 
