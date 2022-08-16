@@ -1,40 +1,40 @@
-# Setting up a local development environment
+# Configurando tu entorno de desarrollo local
 
-Before we can actually start building Streamlit apps, we will first have to setup a development environment.
+Antes de empezar a desarrollar nuestras aplicaciones, vamos a necesitar primero configurar el entorno de desarrollo.
 
-Let's start by installing and setting up a conda environment.
+Comencemos instalando y configurando el entorno Conda. 
 
-## **Install conda**
-- Install `conda` by going to https://docs.conda.io/en/latest/miniconda.html and choose your operating system (Windows, Mac or Linux). 
-- Download and run the installer to install `conda`.
+## **Instalar conda**
+- Para instalar `conda` dirigase a https://docs.conda.io/en/latest/miniconda.html y seleccione su sistema operativo (Windows, Mac o Linux). 
+- Descargue y ejecute el instalador para instalar `conda`.
 
-## **Create a new conda environment**
-Now that you have conda installed, let's create a conda environment for managing all the Python library dependencies.
+## **Crear un nuevo entorno conda**
+Una vez que haz instalado conda, comencemos creando un entorno para gestionar todas las dependencias de la librería Python.
 
-To create a new environment with Python 3.9, enter the following:
+Para crear un nuevo entorno con Python 3.9, ejecute lo siguiente:
 ```bash
 conda create -n stenv python=3.9
 ```
 
-where `create -n stenv` will create a conda environment named `stenv` and `python=3.9` will setup the conda environment with Python version 3.9.
+donde `create -n stenv` va a crear un entorno conda llamado `stenv` y `python=3.9` va a especificar que se utilice la version 3.9 de Python en el entorno conda.
 
-## **Activate the conda environment**
+## **Activar el entorno conda**
 
-To use a conda environment that we had just created that is named `stenv`, enter the following into the command line:
+Para utilizar el entorno conda llamado `stenv` que acabamos de crear, ejecute lo siguiente en su terminal:
 
 ```bash
 conda activate stenv
 ```
 
-## **Install the Streamlit library**
+## **Instalar la librería Streamlit**
 
-It's now time to install the `streamlit` library:
+Es tiempo de instalar la librería `streamlit`:
 ```bash
 pip install streamlit
 ```
 
-## **Launching the Streamlit demo app**
-To launch the Streamlit demo app (Figure 1) type:
+## **Ejecutar la aplicación demo de Streamlit**
+Para ejecutar la aplicación demo (Figura 1) ingrese:
 ```bash
 streamlit hello
 ```
