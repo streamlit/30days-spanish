@@ -3,19 +3,19 @@
 
 <img src='3AF34648-C61D-47CE-9E56-C496C5A7C240.jpeg' height=250>
 
-This is the official repo of `#30DaysOfStreamlit` — a 30-day social challenge for you to learn, build and deploy [Streamlit](https://streamlit.io) apps.
+Este es el repositorio oficial de `#30DaysOfStreamlit` - una competencia de 30 dias para que aprendas, desarrolles y desplegues tus aplicaciones [Streamlit](https://streamlit.io).
 
-## How to participate
+## Como participar
 
-All you need to participate is a computer, a basic understanding of Python, and your curiosity. 🧠
+Todo lo que necesitas para participar es una computadora, conocimientos básicos de Python, y tu curiosidad. 🧠
 
-A new challenge is released daily via Streamlit's [Twitter](https://twitter.com/streamlit) and [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) accounts as well as the [`#30DaysOfStreamlit` app](https://share.streamlit.io/streamlit/30days/).
+Un nuevo desafio is liberado diariamente por medio de [Twitter](https://twitter.com/streamlit) y [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) como tambien en la aplicación de [`#30DaysOfStreamlit`](https://share.streamlit.io/streamlit/30days/).
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/streamlit/30days/)
 
-Complete the daily challenges, share your solutions with us on Twitter or LinkedIn, and get rewarded with cool Streamlit swag! 😎
+Completa los desafios diarios, comparti tus soluciones con nosotros en Twitter o LinkedIn, y obtendras geniales premios de Streamlit 😎
 
-## What are the daily challenges?
+## Cuales son los desafios diarios?
 
 Find out more about the specific challenges by participating! The 30-day challenges are divided by 3 levels of difficulty to appeal to participants of all skill levels:
 
