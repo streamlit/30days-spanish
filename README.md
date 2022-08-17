@@ -17,13 +17,14 @@ Completa los desafios diarios, comparti tus soluciones con nosotros en Twitter o
 
 ## Cuales son los desafios diarios?
 
-Find out more about the specific challenges by participating! The 30-day challenges are divided by 3 levels of difficulty to appeal to participants of all skill levels:
+Aprende mas sobre los desafios participando! Los desafios de 30 dias estan divididos en 3 niveles de dificultad para atraer a participantes de toda experiencia:
 
-| Beginner (Days 1-7) | Intermediate (Days 8-23) | Advanced (Days 24-30) |
+| Principiante (Dias 1-7) | Intermedio (Dias 8-23) | Avanzado (Dias 24-30) |
 | :---        |    :----   |          :--- |
-| Set up your local and cloud coding environments, install Streamlit, and build your first Streamlit app.| Learn about a new [Streamlit command](https://docs.streamlit.io/library/api-reference) each day and use it to create and deploy a simple Streamlit app. | Learn about important topics such as session state, efficient data and memory management via caching, complex layouts, and much more.
+| Configura tus ambientes de desarrollo local y cloud, instala Streamlit, y construi tu primer Streamlit app.| Aprende de un nuevo [comando de Streamlit](https://docs.streamlit.io/library/api-reference) cada dia y usalo para crear y desplegar una Streamlit app. | Aprende de importante temas tal como estado de sesion, manejo eficiente de datos y memoria por medio de caché, diseños complejos y mucho mas.
 
-## Prizes
+
+## Premios
 
 If getting up to speed with the fastest and easiest way to build data apps isn't already the best summer gift, you can also win Streamlit goodies!
 
