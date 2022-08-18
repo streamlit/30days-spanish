@@ -32,15 +32,15 @@ Completa los desafios diarios, comparti tus soluciones con nosotros en [Twitter]
 
 ## Recursos
 
-- La aplicación oficial de [`#30DaysOfStreamlit`](https://share.streamlit.io/streamlit/30days/) donde desafios diarios son publicados.
-- Nuestro [Twitter](https://twitter.com/streamlit) y [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) para informacion todos los dias.
-- La [documentación oficial](https://docs.streamlit.io/) de Streamlit y la [cheat sheet](https://docs.streamlit.io/library/cheatsheet) para una referencia completa de los comandos de Streamlit
+- La aplicación oficial de [`#30DaysOfStreamlit`](https://share.streamlit.io/streamlit/30days/) donde publicamos desafios diarios.
+- Nuestro [Twitter](https://twitter.com/streamlit) y [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) para informacion diaria.
+- La [documentación oficial](https://docs.streamlit.io/) de Streamlit y la [cheat sheet](https://docs.streamlit.io/library/cheatsheet) para una referencia completa de los comandos de Streamlit.
 - Nuestra asombrosa [Galería](https://streamlit.io/gallery) para inspiración, plantillas, y apps de la comunidad.
 - Nuestro [blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/) para consejos y la ultima información de Streamlit.
 
 ## Traducciones
 
-Queres ayudarnos expandiendo el alcance de `#30DaysOfStreamlit` y el Ingles no es tu idioma? Traduci los desafios en tu lenguaje preferido y enlazalo aqui debajo!
+Queres ayudarnos expandiendo el alcance de `#30DaysOfStreamlit` y el Español no es tu idioma? Traduci los desafios en tu lenguaje preferido y enlazalo aqui debajo!
 - [English](https://github.com/streamlit/30days) (Official): [![30 Days of Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days.streamlitapp.com)
 - [French](https://github.com/streamlit/30days-French) (by [Charly Wargnier](https://github.com/charlyWargnier/)): [![30 Days of Streamlit en Français!](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-in-french.streamlitapp.com/)
 - [Portuguese](https://github.com/franciscoed/30days) (by [franciscoed](https://github.com/franciscoed)): [![30 Dias de Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/franciscoed/30days)
