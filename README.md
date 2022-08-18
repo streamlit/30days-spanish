@@ -21,7 +21,7 @@ Aprende mas sobre los desafios participando! Los desafios de 30 dias estan divid
 
 | Principiante (Dias 1-7) | Intermedio (Dias 8-23) | Avanzado (Dias 24-30) |
 | :---        |    :----   |          :--- |
-| Configura tus ambientes de desarrollo local y cloud, instala Streamlit, y construi tu primer Streamlit app.| Aprende de un nuevo [comando de Streamlit](https://docs.streamlit.io/library/api-reference) cada dia y usalo para crear y desplegar una Streamlit app. | Aprende de importante temas tal como estado de sesion, manejo eficiente de datos y memoria por medio de caché, diseños complejos y mucho mas.
+| Configura tus ambientes de desarrollo local y cloud, instala Streamlit, y construi tu primer Streamlit app.| Aprende de un nuevo [comando de Streamlit](https://docs.streamlit.io/library/api-reference) cada dia y usalo para crear y desplegar una Streamlit app. | Aprende de importante temas tal como estado de sesion, manejo eficiente de datos y memoria por medio de caché, diseños complejos y mucho mas. |
 
 
 ## Premios

@@ -1,14 +1,15 @@
-# Building your first Streamlit app
+# Construyendo tu primer Streamlit app
 
-## Fire up your IDE
+## Encende tu IDE
 
-Fire up your IDE whether it be Atom, VS Code or even a cloud IDE such as GitPod or GitHub.dev.
 
-Create a file called `streamlit_app.py`
+Utiliza tu IDE cual sea fuera Atom, VS Code o incluso un IDE en la nube tal como GitPod o GitHub.dev. 
 
-## Entering your first lines of code
+Crea un archivo con el nombre `streamlit_app.py`
 
-To the newly created file, enter the following lines of code:
+## Ingresando tus primeras lineas de codigo
+
+En el archivo recientemente creado, ingresa las siguientes lineas de codigo:
 
 ```
 import streamlit as st
@@ -16,16 +17,16 @@ import streamlit as st
 st.write('Hello world!')
 ```
 
-Save the file.
+Guarda el archivo.
 
-## Fire up the command line terminal
+## Encende tu terminal de linea de comandos
 
-To the terminal, enter the following:
+En la terminal, ingresar lo siguiente:
 
 ```
 streamlit run streamlit_app.py
 ```
 
-A browser window should pop-up showing the newly created Streamlit app.
+Una ventana de tu explorador deberia abrirse mostrando la Streamlit app recien creada.
 
-**Congratulations!** You have just created your first Streamlit app!
+**Felicitaciones!** Acabas de crear tu primera Streamlit app!
