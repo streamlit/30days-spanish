@@ -26,7 +26,7 @@ Aprende mas sobre los desafios participando! Los desafios de 30 dias estan divid
 
 ## Premios
 
-Si ponerte al dia de la manera mas rapida y facil para construir data apps no es suficiente, tambien puedes ganar regalos de Streamlit!
+Si ponerte al dia de la manera mas rapida y facil para construir data apps no es suficiente, tambien puedes ganar regalos con Streamlit!
 
 Completa los desafios diarios, comparti tus soluciones con nosotros en [Twitter](https://twitter.com/streamlit) or [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all), y se recompensado con regalos geniales de Streamlit! 🎁
 
