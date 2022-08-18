@@ -26,21 +26,22 @@ Aprende mas sobre los desafios participando! Los desafios de 30 dias estan divid
 
 ## Premios
 
-If getting up to speed with the fastest and easiest way to build data apps isn't already the best summer gift, you can also win Streamlit goodies!
+Si ponerte al dia de la manera mas rapida y facil para construir data apps no es suficiente, tambien puedes ganar regalos de Streamlit!
 
-Complete the daily challenges, share your solutions with us on [Twitter](https://twitter.com/streamlit) or [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all), and get rewarded with cool Streamlit swag! 🎁
+Completa los desafios diarios, comparti tus soluciones con nosotros en [Twitter](https://twitter.com/streamlit) or [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all), y se recompensado con regalos geniales de Streamlit! 🎁
 
-## Resources
+## Recursos
 
-- The official [`#30DaysOfStreamlit` app](https://share.streamlit.io/streamlit/30days/) where daily challenges are posted
-- Our [Twitter](https://twitter.com/streamlit) and [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) feeds for daily updates
-- Streamlit [documentation](https://docs.streamlit.io/) and [cheat sheet](https://docs.streamlit.io/library/cheatsheet) for a thorough reference of Streamlit commands
-- Our awesome [Gallery](https://streamlit.io/gallery) for inspiration, templates, and community apps
-- Our [blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/) for tips and the latest Streamlit info
+- La aplicación oficial de [`#30DaysOfStreamlit`](https://share.streamlit.io/streamlit/30days/) donde desafios diarios son publicados.
+- Nuestro [Twitter](https://twitter.com/streamlit) y [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) para informacion todos los dias.
+- La [documentación oficial](https://docs.streamlit.io/) de Streamlit y la [cheat sheet](https://docs.streamlit.io/library/cheatsheet) para una referencia completa de los comandos de Streamlit
+- Nuestra asombrosa [Galería](https://streamlit.io/gallery) para inspiración, plantillas, y apps de la comunidad.
+- Nuestro [blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/) para consejos y la ultima información de Streamlit.
 
-## Translations
+## Traducciones
 
-Want to help us expand the reach of `#30DaysOfStreamlit` and English isn't your primary language? Translate the challenges into your preferred language and link to them below!
+Queres ayudarnos expandiendo el alcance de `#30DaysOfStreamlit` y el Ingles no es tu idioma? Traduci los desafios en tu lenguaje preferido y enlazalo aqui debajo!
 - [English](https://github.com/streamlit/30days) (Official): [![30 Days of Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days.streamlitapp.com)
 - [French](https://github.com/streamlit/30days-French) (by [Charly Wargnier](https://github.com/charlyWargnier/)): [![30 Days of Streamlit en Français!](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-in-french.streamlitapp.com/)
 - [Portuguese](https://github.com/franciscoed/30days) (by [franciscoed](https://github.com/franciscoed)): [![30 Dias de Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/franciscoed/30days)
+- [Español](https://github.com/arraydude/30days-spanish/) (by [Emiliano Rosso](https://github.com/arraydude): [![30 Dias de Streamlit]
