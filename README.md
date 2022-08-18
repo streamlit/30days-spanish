@@ -3,7 +3,7 @@
 
 <img src='3AF34648-C61D-47CE-9E56-C496C5A7C240.jpeg' height=250>
 
-Este es el repositorio oficial de `#30DaysOfStreamlit` - una competencia de 30 dias para que aprendas, desarrolles y desplegues tus aplicaciones [Streamlit](https://streamlit.io).
+Este es el repositorio oficial de `#30DaysOfStreamlit` - una competencia de 30 dias para que aprendas, desarrolles y desplegues tus aplicaciones con  [Streamlit](https://streamlit.io).
 
 ## Como participar
 
