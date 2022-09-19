@@ -1,25 +1,26 @@
 # st.button
 
-`st.button` allows the display of a button widget.
+`st.button` permite mostrar un boton.
 
-## What we're building?
+## Que estamos construyendo?
 
-A simple app that performs conditionally prints out alternative messages depending on whether the button was pressed or not.
+Una simple aplicacion que imprime condicionalmente diferentes mensajes dependiendo si el boton fue presionado o no.
 
-Flow of the app:
 
-1. By default, the app prints `Goodbye`
-2. Upon clicking on the button, the app displays the alternative message `Why hello there`
+Comportamiento de la aplicacion:
+
+1. Por defecto, la aplicacion imprime `Goodbye`
+2. Una vez que se hace click sobre el boton, la aplicacion imprime `Why hello there`
 
 ## Demo app
 
-The deployed Streamlit app should look something like the one shown in the below link:
+La aplicacion de Streamlit deberia verse algo como la mostrada en el siguiente link:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.button/)
 
-## Code
+## Codigo
 
-Here's the code to implement the above mentioned app:
+Aqui tenemos el codigo para implementar la aplicacion previamente mencionada:
 
 ```python
 import streamlit as st
@@ -32,21 +33,22 @@ else:
      st.write('Goodbye')
 ```
 
-## Line-by-line explanation
+## Explicacion linea por linea
 
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+
+Lo primero que tenemos que hacer cuando creamos una aplicacion de Streamlit es comenzar importando la libreria `streamlit` de la siguiente manera:
 
 ```python
 import streamlit as st
 ```
 
-This is followed by creating a header text for the app:
+Seguimos por crear un encabezado de texto para la aplicacion:
 
 ```python
 st.header('st.button')
 ```
 
-Next, we will use conditional statements `if` and `else` for printing alternative messages.
+Siguiente, vamos a usar los condicionales `if` y `else` para imprimir los correspondientes mensajes.
 
 ```python
 if st.button('Say hello'):
@@ -55,33 +57,33 @@ else:
      st.write('Goodbye')
 ```
 
-As we can see from the above code box, the `st.button()` command accepts the `label` input argument of `Say hello`, which is the text that the button displays.
+Como podemos ver en el anterior codigo, el comando `st.button()` admite el argumento `label` con el valor `Say hello`, el cual es el texto que el boton muestra.
 
-The `st.write` command is used to print text messages of either `Why hello there` or `Goodbye` depending on whether the button was clicked or not, which is implemented via:
+El comando `st.write` es usado para imprimir mensajes tales como `Why hello there` o `Goodbye` dependiendo si el boton fue presionado o no, lo cual es implementado de la siguiente manera:
 
 
 ```python
 st.write('Why hello there')
 ```
 
-and
+y
 
 ```python
 st.write('Goodbye')
 ```
 
-It is important to note that the above `st.write` statements are placed under the `if` and `else` conditions in order to perform the above mentioned process of alternative displaying of messages
+Es importante tener en cuenta que los `st.write` estan colocados debajo de las condiciones `if` y `else` para realizer el mencionado proceso de mostrar mensajes alternativos.
 
-## Next steps
+## Siguientes pasos
 
-Now that you have created the Streamlit app locally, it's time to deploy it to [Streamlit Cloud](https://streamlit.io/cloud) as will be explained soon in an upcoming challenge.
+Ahora que has creado la app localmente, es hora de desplegarla en [Streamlit Cloud](https://streamlit.io/cloud) como lo vamos a mencionar proximamente en un proximo desafio.
 
-Because this is the first week of your challenge, we provide the full code (as shown in the code box above) and solution (the demo app) right inside this webpage.
+Como esta es la primer semana de tu desafio, nosotros proveemos el codigo completo (como es mostrado en el codigo anterior) y la solucion (la app de ejemplo) dentro de esta web.
 
-Moving forward in the next challenges, it is recommended that you first try implementing the Streamlit app yourself.
+Avanzando en el proximo desafio, es recomendable que intentes implementar la Streamlit app por vos mismo.
 
-Don't worry if you get stuck, you can always take a peek at the solution.
+No te preocupes si te trabas, tu siempre puedes tomar un vistazo a la solucion. 
 
-## References
+## Referencias
 
-Read about [`st.button`](https://docs.streamlit.io/library/api-reference/widgets/st.button) in the Streamlit API Documentation.
+Lee acerca [`st.button`](https://docs.streamlit.io/library/api-reference/widgets/st.button) en la documentacion de Streamlit.
