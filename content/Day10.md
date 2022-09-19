@@ -1,22 +1,22 @@
 # st.selectbox
 
-`st.selectbox` allows the display of a select widget.
+`st.selectbox` permite la visualización de un componente de selección.
 
-## What we're building?
+## Que estamos construyendo?
 
-A simple app that asks the user what their favorite color is.
+Una sencilla aplicación que pregunta al usuario cuál es su color favorito.
 
-Flow of the app:
-1. User selects a color
-2. App prints out the selected color
+Comportamiento de la aplicación:
+1. El usuario selecciona un color
+2. La aplicación imprime el color seleccionado
 
 ## Demo app
-The deployed Streamlit app should look something like the one shown in the below link: 
+La aplicación Streamlit implementada debería parecerse a la que se muestra en el siguiente enlace:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.selectbox/)
 
-## Code
-Here's the code to implement the above mentioned app:
+## Codigo
+Aquí está el código para implementar la aplicación mencionada anteriormente:
 ```python
 import streamlit as st
 
@@ -29,35 +29,35 @@ option = st.selectbox(
 st.write('Your favorite color is ', option)
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## Explicación línea por línea
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` así:
 ```python
 import streamlit as st
 ```
 
-This is followed by creating a header text for the app:
+A esto le sigue la creación de un texto de encabezado para la aplicación:
 ```python
 st.header('st.selectbox')
 ```
 
-Next, we will create a variable called `option` that will accept user input in the form of a **select** input widget via the `st.selectbox()` command.
+A continuación, crearemos una variable llamada `option` que aceptará la entrada del usuario a través del comando "st.selectbox()".
 
 ```python
 option = st.selectbox(
      'What is your favorite color?',
      ('Blue', 'Red', 'Green'))
 ```
-As we can see from the above code box, the `st.selectbox()` command accepts 2 input arguments:
-1. The text that goes above the select widget, i.e. `'What is your favorite color?'`
-2. The possible values to select from `('Blue', 'Red', 'Green')`
+Como podemos ver en el cuadro de código anterior, el comando `st.selectbox()` acepta 2 argumentos de entrada:
+1. El texto que va encima del widget de selección, es decir, `'What is your favorite color?'`
+2. Los valores posibles para seleccionar `('Blue', 'Red', 'Green')`
 
-Finally, we'll print out the selected color as follows:
+Finalmente, imprimiremos el color seleccionado de la siguiente manera:
 ```python
 st.write('Your favorite color is ', option)
 ```
 
-## Next steps
-Now that you have created the Streamlit app locally, it's time to deploy it to [Streamlit Cloud](https://streamlit.io/cloud).
+## Próximos pasos
+Ahora que ha creado la aplicación Streamlit localmente, es hora de implementarla en [Streamlit Cloud](https://streamlit.io/cloud).
 
-## References 
-More about [`st.selectbox`](https://docs.streamlit.io/library/api-reference/widgets/st.selectbox)
+## Referencias
+Más información sobre [`st.selectbox`](https://docs.streamlit.io/library/api-reference/widgets/st.selectbox)
