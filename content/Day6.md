@@ -1,34 +1,34 @@
-# Uploading your Streamlit app to GitHub
+# Subir tu Streamlit app a Github
 
 ## GitHub
 
-Git is a software for keeping track of all changes made to code (i.e. version control). GitHub is a Git repository hosting service that makes data and code publicly available on the web, which allows team collaboration and allow others to contribute to the repo.
+Git es un software para realizar un seguimiento de todos los cambios realizados en el código (es decir, control de versiones). GitHub es un servicio de alojamiento de repositorios de Git que hace que los datos y el código estén disponibles públicamente en la web, lo que permite la colaboración en equipo y permite que otros contribuyan al repositorio.
 
-Housing your Streamlit app in a GitHub repository will allow apps to be deployed to the cloud (the next challenge).
+Alojando su aplicación Streamlit en un repositorio GitHub permitirá que las aplicaciones se implementen en la nube (el próximo desafío).
 
-## Sign up for GitHub
+## Regístrese en GitHub
 
-Firstly, sign up for a [GitHub](https://github.com/) account.
+En primer lugar, regístrese para obtener una cuenta de [GitHub](https://github.com/).
 
-## Create a GitHub repository
+## Crear un repositorio de GitHub
 
-Follow the following steps to create a GitHub repository:
-- In the top right hand corner, click on the **"+"** icon which should reveal a drop-down menu, then click on **"New repository"** (*Figure 1*).
+Siga los siguientes pasos para crear un repositorio de GitHub:
+- En la esquina superior derecha, haga clic en el ícono **"+"** que debe revelar un menú desplegable, luego haga clic en **"New repository"** (*Figure 1*).
 
-- This should bring to a new webpage called **"Create a new repository"**. Under the **"Repository name"** field, enter a name for your repository, for example, `helloworld` (***Figure 2***).
+- Esto debería llevar a una nueva página web llamada **"Create a new repository"**. En el campo **"Repository name"**, ingrese un nombre para su repositorio, por ejemplo, `helloworld` (***Figure 2***).
 
-- Under the **"Initialize this repository with:"** field, tick on **"Add a README file"**.
+- En el campo **"Initialize this repository with:"**, marque **"Add a README file"**.
 
-- Finally, click on **"Create repository"** (Figure 3).
+- Finalmente, click en **"Create repository"** (Figure 3).
 
-Your newly created repository will be available at `https://github.com/dataprofessor/helloworld` where `dataprofessor` is the username and `helloworld` is the repository name.
+Su repositorio recién creado estará disponible en `https://github.com/dataprofessor/helloworld` donde `dataprofessor` es el nombre de usuario y `helloworld` es el nombre del repositorio.
 
-Below is the screenshot of the newly created repo (Figure 4):
+A continuación se muestra la captura de pantalla del repositorio recién creado (Figure 4):
 
-## Upload files to the GitHub repo
+## Subir archivos al repositorio de GitHub
 
-Slightly above the file table and adjacent to the green **Code** button, click on **Add file** > **Upload files** (Figure 5).
+Ligeramente arriba de la tabla de archivos y junto al botón verde **Code**, haga clic en **Add file** > **Upload files** (Figure 5).
 
-This will bring you to a new webpage where the central box says ***Drag files here to add them to your repository*** and **choose your files**, which you can either drag-and-drop files into this box or click on the **choose your files** link to choose files from your local computer.
+Esto lo llevará a una nueva página web donde el cuadro central dice ***Drag files here to add them to your repository*** y **choose your files**, que puede arrastrar y soltar archivos en este cuadro o haga clic en el enlace **choose your files** para elegir archivos de su computadora.
 
-Click on **Commit changes** to proceed further (Figure 6).
+Click en **Commit changes** para continuar (Figure 6).
