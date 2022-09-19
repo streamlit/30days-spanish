@@ -1,29 +1,29 @@
 # st.write
 
-`st.write` allows writing text and arguments to the Streamlit app.
+`st.write` permite imprimir texto y datos en la Streamlit app. 
 
-In addition to being able to display text, the following can also be displayed via the `st.write()` command:
+Además de poder mostrar texto, también se puede mostrar lo siguiente mediante el comando `st.write()`:
 
 
-- Prints strings; works like `st.markdown()`
-- Displays a Python `dict`
-- Displays `pandas` DataFrame can be displayed as a table
-- Plots/graphs/figures from `matplotlib`, `plotly`, `altair`, `graphviz`, `bokeh`
-- And more (see [st.write on API docs](https://docs.streamlit.io/library/api-reference/write-magic/st.write))
+- Muestra cadenas; funciona como `st.markdown()`
+- Muestra un `dict` de Python
+- Muestra `pandas` DataFrame se puede mostrar como una tabla
+- Graficos/Esquemas/Representaciones de `matplotlib`, `plotly`, `altair`, `graphviz`, `bokeh`
+- Y mas (ver [st.write en la documentacion de Streamlit](https://docs.streamlit.io/library/api-reference/write-magic/st.write))
 
-## What we're building?
+## Que estamos construyendo?
 
-A simple app showing the various ways on how to use the `st.write()` command for displaying text, numbers, DataFrames and plots.
+Una aplicación sencilla que muestra las diversas formas de utilizar el comando `st.write()` para mostrar texto, números, marcos de datos y gráficos.
 
 ## Demo app
 
-The deployed Streamlit app should look something like the one shown in the below link:
+La aplicacion de Streamlit deberia verse como la mostrada en el siguiente link:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.write/)
 
-## Code
+## Codigo
 
-Here's how to use st.write:
+Así es como se usa st.write:
 
 ```python
 import numpy as np
@@ -63,36 +63,36 @@ c = alt.Chart(df2).mark_circle().encode(
 st.write(c)
 ```
 
-## Line-by-line explanation
+## Explicacion linea por linea
 
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+Lo primero que tenemos que hacer cuando creamos una aplicacion de Streamlit es comenzar importando la libreria `streamlit` de la siguiente manera:
 
 ```python
 import streamlit as st
 ```
 
-This is followed by creating a header text for the app:
+Seguimos por crear un encabezado de texto para la aplicacion:
 
 ```python
 st.header('st.write')
 ```
 
 **Example 1**
-Its basic use case is to display text and Markdown-formatted text:
+Su caso de uso básico es mostrar texto y texto con formato Markdown:
 
 ```python
 st.write('Hello, *World!* :sunglasses:')
 ```
 
 **Example 2**
-As mentioned above, it can also be used to display other data formats such as numbers:
+Como se mencionó anteriormente, también se puede usar para mostrar otros formatos de datos, como números:
 
 ```python
 st.write(1234)
 ```
 
 **Example 3**
-DataFrames can also be displayed as follows:
+Los DataFrames también se pueden mostrar de la siguiente manera:
 
 ```python
 df = pd.DataFrame({
@@ -103,14 +103,14 @@ st.write(df)
 ```
 
 **Example 4**
-You can pass in multiple arguments:
+Puedes pasar multiples argumentos:
 
 ```python
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 ```
 
 **Example 5**
-Finally, you can also display plots as well by passing it to a variable as follows:
+Finalmente, también puede mostrar gráficos pasándolos a una variable de la siguiente manera:
 
 ```python
 df2 = pd.DataFrame(
@@ -123,23 +123,23 @@ st.write(c)
 
 ## Demo app
 
-The deployed Streamlit app should look something like the one shown in the below link:
+La aplicacion de Streamlit deberia verse como la mostrada en el siguiente link:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.write/)
 
-## Next steps
+## Siguientes pasos
 
-Now that you have created the Streamlit app locally, it's time to deploy it to [Streamlit Cloud](https://streamlit.io/cloud) as will be explained soon in an upcoming challenge.
+Ahora que has creado la app localmente, es hora de desplegarla en [Streamlit Cloud](https://streamlit.io/cloud) como lo vamos a mencionar proximamente en un proximo desafio.
 
-Because this is the first week of your challenge, we provide the full code (as shown in the code box above) and solution (the demo app) right inside this webpage.
+Como esta es la primer semana de tu desafio, nosotros proveemos el codigo completo (como es mostrado en el codigo anterior) y la solucion (la app de ejemplo) dentro de esta web.
 
-Moving forward in the next challenges, it is recommended that you first try implementing the Streamlit app yourself.
+Avanzando en el proximo desafio, es recomendable que intentes implementar la Streamlit app por vos mismo.
 
-Don't worry if you get stuck, you can always take a peek at the solution.
+No te preocupes si te trabas, tu siempre puedes tomar un vistazo a la solucion.
 
-## Further reading
+## Otras lecturas
 
-In addition to [`st.write`](https://docs.streamlit.io/library/api-reference/write-magic/st.write), you can explore the other ways of displaying text:
+A demas de [`st.write`](https://docs.streamlit.io/library/api-reference/write-magic/st.write), puedes explorar otras manera para mostrar texto:
 
 - [`st.markdown`](https://docs.streamlit.io/library/api-reference/text/st.markdown)
 - [`st.header`](https://docs.streamlit.io/library/api-reference/text/st.header)

@@ -14,7 +14,7 @@ Comportamiento de la aplicacion:
 
 ## Demo app
 
-La aplicacion de Streamlit deberia verse algo como la mostrada en el siguiente link:
+La aplicacion de Streamlit deberia verse como la mostrada en el siguiente link:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.button/)
 
