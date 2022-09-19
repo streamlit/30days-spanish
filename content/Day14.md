@@ -1,20 +1,20 @@
-# Streamlit Components
+# Componentes de Streamlit
 
-Components are third-party Python modules that extend what's possible with Streamlit [[1](https://docs.streamlit.io/library/components)].
+Los componentes son módulos Python de terceros que amplían lo que es posible con Streamlit [[1](https://docs.streamlit.io/library/components)].
 
-## What Streamlit components are available?
+## Que componentes estan disponibles?
 
-There are several dozens of Streamlit components featured on Streamlit's website [[2](https://streamlit.io/components)].
+Hay varias docenas de componentes de Streamlit que aparecen en el sitio web de Streamlit [[2](https://streamlit.io/components)].
 
-Fanilo (a Streamlit Creator) curated an amazing list of Streamlit components on a wiki post [[3](https://discuss.streamlit.io/t/streamlit-components-community-tracker/4634)] that lists about 85 Streamlit components as of April 2022.
+Fanilo (un creador de Streamlit) seleccionó una increíble lista de componentes de Streamlit en una publicación wiki [[3](https://discuss.streamlit.io/t/streamlit-components-community-tracker/4634)] que enumera alrededor de 85 componentes a partir de abril de 2022.
 
-## How to use?
+## Cómo utilizar?
 
-Streamlit components are just a pip-install away.
+Los componentes Streamlit están a solo un pip de distancia.
 
-In this tutorial, let's get you started in using the `streamlit_pandas_profiling` component [[4](https://share.streamlit.io/okld/streamlit-gallery/main?p=pandas-profiling)].
+En este tutorial, comencemos a usar el componente `streamlit_pandas_profiling` [[4](https://share.streamlit.io/okld/streamlit-gallery/main?p=pandas-profiling)].
 
-#### Install the component 
+#### Instalar el componente 
 
 ```bash
 pip install streamlit_pandas_profiling
@@ -24,8 +24,8 @@ pip install streamlit_pandas_profiling
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-components/)
 
-## Code
-Here's how to build a Streamlit app using a component:
+## Código
+Aquí se explica cómo crear una aplicación Streamlit usando un componente:
 ```python
 import streamlit as st
 import pandas as pd
@@ -40,8 +40,8 @@ pr = df.profile_report()
 st_profile_report(pr)
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` as well as other libraries used in the app like so:
+## Explicación línea por línea
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st`, así como otras bibliotecas utilizadas en la aplicación:
 ```python
 import streamlit as st
 import pandas as pd
@@ -49,36 +49,36 @@ import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
 ```
 
-This is followed by creating a header text for the app:
+A esto le sigue la creación de un texto de encabezado para la aplicación:
 ```python
 st.header('`streamlit_pandas_profiling`')
 ```
 
-Next, we load in the Penguins dataset using the `read_csv` command of `pandas`.
+A continuación, cargamos el conjunto de datos de Penguins usando el comando `read_csv` de `pandas`.
 ```python
 df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
 ```
 
-Finally, the pandas profiling report is generated via the `profile_report()` command and displayed using `st_profile_report`:
+Finalmente, el informe de pandas se genera a través del comando `profile_report()` y se muestra usando `st_profile_report`:
 ```python
 pr = df.profile_report()
 st_profile_report(pr)
 ```
 
-## Making your own Components
+## Fabricación de sus propios componentes
 
-If you're interested in making your own component, please check out the following resources:
-- [Create a Component](https://docs.streamlit.io/library/components/create)
-- [Publish a Component](https://docs.streamlit.io/library/components/publish)
-- [Components API](https://docs.streamlit.io/library/components/components-api)
-- [Blog post on Components](https://blog.streamlit.io/introducing-streamlit-components/)
+Si está interesado en crear su propio componente, consulte los siguientes recursos:
+- [Crear un componente](https://docs.streamlit.io/library/components/create)
+- [Publicar un componente](https://docs.streamlit.io/library/components/publish)
+- [API de componentes](https://docs.streamlit.io/library/components/components-api)
+- [Publicación de blog sobre componentes](https://blog.streamlit.io/introducing-streamlit-components/)
 
-Alternatively, if you prefer to learn using videos, our engineer Tim Conkling has put together some amazing tutorials:
-- [How to build a Streamlit component | Part 1: Setup and Architecture](https://youtu.be/BuD3gILJW-Q)
-- [How to build a Streamlit component | Part 2: Part 2: Make a Slider Widget](https://youtu.be/QjccJl_7Jco)
+Alternativamente, si prefiere aprender usando videos, nuestro ingeniero Tim Conkling ha creado algunos tutoriales increíbles:
+- [Cómo construir un componente Streamlit | Parte 1: configuración y arquitectura](https://youtu.be/BuD3gILJW-Q)
+- [Cómo construir un componente Streamlit | Parte 2: Parte 2: Hacer un control deslizante](https://youtu.be/QjccJl_7Jco)
 
-## Further reading about Components
-1. [Streamlit Components - API Documentation](https://docs.streamlit.io/library/components)
-2. [Featured Streamlit Components](https://streamlit.io/components)
-3. [Streamlit Components - Community Tracker](https://discuss.streamlit.io/t/streamlit-components-community-tracker/4634)
+## Más lecturas sobre Componentes
+1. [Componentes Streamlit - Documentación API](https://docs.streamlit.io/library/components)
+2. [Componentes destacados de Streamlit] (https://streamlit.io/components)
+3. [Componentes Streamlit - Seguimiento de la comunidad](https://discuss.streamlit.io/t/streamlit-components-community-tracker/4634)
 4. [`streamlit_pandas_profiling`](https://share.streamlit.io/okld/streamlit-gallery/main?p=pandas-profiling)
