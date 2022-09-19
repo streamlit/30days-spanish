@@ -1,13 +1,13 @@
 # st.checkbox
 
-`st.checkbox` displays a checkbox widget.
+`st.checkbox` muestra un componente de casilla de verificacion.
 
 ## Demo app
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.checkbox/)
 
-## Code
-Here's how to use `st.checkbox`:
+## Código
+Aquí se explica cómo usar `st.checkbox`:
 ```python
 import streamlit as st
 
@@ -29,30 +29,30 @@ if cola:
      st.write("Here you go 🥤")
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## Explicación línea por línea
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` así:
 ```python
 import streamlit as st
 ```
 
-This is followed by creating a header text for the app:
+A esto le sigue la creación de un texto de encabezado para la aplicación:
 ```python
 st.header('st.checkbox')
 ```
 
-Next, we're going to ask a question via `st.write':
+A continuación, haremos una pregunta a través de `st.write`:
 ```python
 st.write ('What would you like to order?')
 ```
 
-We're then going to provide some menu items to tick on:
+Luego vamos a proporcionar algunos elementos de menú para marcar:
 ```python
 icecream = st.checkbox('Ice cream')
 coffee = st.checkbox('Coffee')
 cola = st.checkbox('Cola')
 ```
 
-Finally, we're going to print custom text depending on which checkbox was ticked on:
+Finalmente, vamos a imprimir texto personalizado según la casilla de verificación que se marcó:
 ```python
 if icecream:
      st.write("Great! Here's some more 🍦")
@@ -64,5 +64,5 @@ if cola:
      st.write("Here you go 🥤")
 ```  
 
-## Further reading
+## Otras lecturas
 - [`st.checkbox`](https://docs.streamlit.io/library/api-reference/widgets/st.checkbox)
