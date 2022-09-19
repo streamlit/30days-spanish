@@ -1,13 +1,13 @@
 # st.multiselect
 
-`st.multiselect` displays a multiselect widget.
+`st.multiselect` muestra un componente de seleccion multiple.
 
 ## Demo app
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.multiselect/)
 
-## Code
-Here's how to use `st.multiselect`:
+## Código
+Aquí se explica cómo usar `st.multiselect`:
 ```python
 import streamlit as st
 
@@ -21,18 +21,18 @@ options = st.multiselect(
 st.write('You selected:', options)
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## Explicación línea por línea
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` así:
 ```python
 import streamlit as st
 ```
 
-This is followed by creating a header text for the app:
+A esto le sigue la creación de un texto de encabezado para la aplicación:
 ```python
 st.header('st.multiselect')
 ```
 
-Next, we're going to use the `st.multiselect` widget to accept input where users will be able to select one or more colors of there choice.
+A continuación, vamos a utilizar el componente `st.multiselect` donde los usuarios podrán seleccionar uno o más colores de su elección.
 
 ```python
 options = st.multiselect(
@@ -41,10 +41,10 @@ options = st.multiselect(
      ['Yellow', 'Red'])
 ```
 
-Finally, we'll write out the selected colors:
+Finalmente, escribiremos los colores seleccionados:
 ```python
 st.write('You selected:', options)
 ```
 
-## Further reading
+## Otras lecturas
 - [`st.multiselect`](https://docs.streamlit.io/library/api-reference/widgets/st.multiselect)
