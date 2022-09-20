@@ -1,16 +1,16 @@
 # st.latex
 
-`st.latex` display mathematical expressions formatted as LaTeX.
+`st.latex` muestra expresiones matemáticas formateadas como LaTeX.
 
-## What we're building?
+## Qué estamos construyendo?
 
-A simple app that displays a mathematical equation using LaTeX syntax via the `st.latex` command.
+Una aplicación simple que muestra una ecuación matemática utilizando la sintaxis de LaTeX a través del comando `st.latex`.
 
 ## Demo app
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.latex/)
 
-## Code
-Here's how to use `st.latex`:
+## Código
+Así es como se usa `st.latex`:
 ```python
 import streamlit as st
 
@@ -23,18 +23,18 @@ st.latex(r'''
      ''')
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## Explicación línea por línea
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` así:
 ```python
 import streamlit as st
 ```
 
-This is followed by creating a header text for the app:
+A esto le sigue la creación de un texto de encabezado:
 ```python
 st.header('st.latex')
 ```
 
-Next, we're displaying the mathematical equation via `st.latex`:
+A continuación, mostramos la ecuación matemática a través de `st.latex`:
 ```python
 st.latex(r'''
      a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
@@ -43,5 +43,5 @@ st.latex(r'''
      ''')
 ```
 
-## References
-- Read more about [`st.latex`](https://docs.streamlit.io/library/api-reference/text/st.latex) in the Streamlit API Documentation.
+## Referencias
+- Obtenga más información sobre [`st.latex`](https://docs.streamlit.io/library/api-reference/text/st.latex) en la documentación de la API de Streamlit.
