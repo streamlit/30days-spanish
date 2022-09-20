@@ -5,7 +5,7 @@ Antes de empezar a desarrollar nuestras aplicaciones, vamos a necesitar primero 
 Comencemos instalando y configurando el entorno Conda. 
 
 ## **Instalar conda**
-- Para instalar `conda` dirigase a https://docs.conda.io/en/latest/miniconda.html y seleccione su sistema operativo (Windows, Mac o Linux). 
+- Para instalar `conda` diríjase a https://docs.conda.io/en/latest/miniconda.html y seleccione su sistema operativo (Windows, Mac o Linux). 
 - Descargue y ejecute el instalador para instalar `conda`.
 
 ## **Crear un nuevo entorno conda**
