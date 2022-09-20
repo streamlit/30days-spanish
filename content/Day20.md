@@ -1,6 +1,6 @@
-# Tech Twitter Space on What is Streamlit? 
-## (Hosted by Francesco Ciulla)
+# Tech Twitter Space sobre ¿Qué es Streamlit?
+## (Presentado por Francesco Ciulla)
 
-Join us for a discussion about Streamlit with our host [Francesco Ciulla](https://twitter.com/FrancescoCiull4).
+Únase a nosotros para una discusión sobre Streamlit con nuestro anfitrión [Francesco Ciulla] (https://twitter.com/FrancescoCiull4).
 
-👉 Link: https://twitter.com/i/spaces/1dRJZlbglXMKB 
+👉 Enlace: https://twitter.com/i/spaces/1dRJZlbglXMKB 
