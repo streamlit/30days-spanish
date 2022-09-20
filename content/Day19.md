@@ -1,17 +1,17 @@
-# How to layout your Streamlit app
+# Cómo diseñar su aplicación Streamlit
 
-In this tutorial, we're going to use the following commands to layout our Streamlit app:
-- `st.set_page_config(layout="wide")` - Displays the contents of the app in wide mode (otherwise by default, the contents are encapsulated in a fixed width box.
-- `st.sidebar` - Places the widgets or text/image displays in the sidebar.
-- `st.expander` - Places text/image displays inside a collapsible container box.
-- `st.columns` - Creates a tabular space (or column) within which contents can be placed inside.
+En este tutorial, usaremos los siguientes comandos para diseñar nuestra aplicación Streamlit:
+- `st.set_page_config(layout="wide")` - Muestra el contenido de la aplicación en modo ancho (de lo contrario, de forma predeterminada, el contenido se encapsula en un cuadro de ancho fijo).
+- `st.sidebar` - Coloca los componentes o visualizaciones de texto/imagen en la barra lateral.
+- `st.expander` - Coloca visualizaciones de texto/imagen dentro de una caja contenedora plegable.
+- `st.columns` - Crea un espacio tabular (o columna) para contener lo que necesites.
 
 ## Demo app
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-layout/)
 
-## Code
-Here's how to customize the layout of your Streamlit app:
+## Código
+Aquí le mostramos cómo personalizar el diseño de su aplicación Streamlit:
 ```python
 import streamlit as st
 
@@ -51,30 +51,30 @@ with col3:
     st.write('👈 Please choose your favorite **food**!')
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## Explicación línea por línea
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` de la siguiente manera:
 ```python
 import streamlit as st
 ```
 
-We'll start by first defining the page layout to be displayed in the `wide` mode, which allows the page content to expand to the browser's width.
+Comenzaremos definiendo primero el diseño de la página que se mostrará en el modo "wide" (ancho), lo que permite que el contenido de la página se expanda al ancho del navegador.
 ```python
 st.set_page_config(layout="wide")
 ```
 
-Next, we'll give the Streamlit app a title.
+A continuación, le daremos un título a la aplicación Streamlit.
 ```python
 st.title('How to layout your Streamlit app')
 ```
 
-An expandable box titled `About this app` is placed under the app title. Upon expansion, we'll see additional details inside.
+Un cuadro expandible titulado `About this app` se coloca debajo del título de la aplicación. Tras la expansión, veremos detalles adicionales.
 ```python
 with st.expander('About this app'):
   st.write('This app shows the various ways on how you can layout your Streamlit app.')
   st.image('https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png', width=250)
 ```
 
-Input widgets for accepting user input is placed in the sidebar as specified by using the `st.sidebar` command before the Streamlit commands `text_input` and `selectbox`. Input values entered or selected by the user are assigned and stored in the `user_name`, `user_emoji` and `user_food` variables.
+Los componentes que aceptan datos de entrada se posicionan en la barra lateral utilizando el comando `st.sidebar` previo a los comandos `text_input` y `selectbox`. Los datos ingresados o seleccionados por el usuario son asignados y guardados en las variables `user_name`, `user_emoji` y `user_food`.
 ```python
 st.sidebar.header('Input')
 user_name = st.sidebar.text_input('What is your name?')
@@ -82,7 +82,7 @@ user_emoji = st.sidebar.selectbox('Choose an emoji', ['', '😄', '😆', '😊'
 user_food = st.sidebar.selectbox('What is your favorite food?', ['', 'Tom Yum Kung', 'Burrito', 'Lasagna', 'Hamburger', 'Pizza'])
 ```
 
-Finally, we'll create 3 columns using the `st.columns` command which corresponds to `col1`, `col2` and `col3`. Then, we assign contents to each of the column by creating individual code blocks starting with the `with` statement. Underneath this, we create conditional statements that display 1 of 2 alternative text depending on whether the user had provided their input data (specified in the sidebar) or not. By default, the page displays text under the `else` statement. Upon providing user input, the corresponding information that the user gives to the app is displayed under the `Output` header text.
+Finalmente, crearemos 3 columnas usando el comando `st.columns` que corresponde a `col1`, `col2` y `col3`. Luego, asignamos contenidos a cada una de las columnas mediante la creación de bloques de código individuales que comienzan con la instrucción `with`. Debajo de esto, creamos declaraciones condicionales que muestran 1 de 2 textos alternativos dependiendo de si el usuario proporcionó datos (especificados en la barra lateral) o no. De forma predeterminada, la página muestra texto debajo de la instrucción `else`. Al usuario proporcionar datos, la información correspondiente del usuario se muestra bajo el encabezado `Output`.
 ```python
 st.header('Output')
 
@@ -106,7 +106,7 @@ with col3:
   else:
     st.write('👈 Please choose your favorite **food**!')
 ```
-It is also worthy to note that `f` strings were used to combine pre-canned text together with the user provided values. 
+También vale la pena señalar que las cadenas `f` se usaron para combinar texto preestablecido junto con los valores proporcionados por el usuario.
 
-## Further reading
-- [Layouts and Containers](https://docs.streamlit.io/library/api-reference/layout)
+## Otras lecturas
+- [Diseños y contenedores](https://docs.streamlit.io/library/api-reference/layout)
