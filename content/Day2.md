@@ -19,7 +19,7 @@ st.write('Hello world!')
 
 Guarda el archivo.
 
-## Encende tu terminal de linea de comandos
+## Enciende tu terminal de linea de comandos
 
 En la terminal, ingresar lo siguiente:
 
