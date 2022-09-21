@@ -24,32 +24,32 @@ query_params = st.experimental_get_query_params()
 if query_params and query_params["challenge"][0] in days_list:
     st.session_state.day = query_params["challenge"][0]
 
-selected_day = st.selectbox('Start the Challenge 👇', days_list, key="day", on_change=update_params)
+selected_day = st.selectbox('Comenzar con el desafio 👇', days_list, key="day", on_change=update_params)
 
-with st.expander("About the #30DaysOfStreamlit"):
+with st.expander("Acerca de #30DaysOfStreamlit"):
     st.markdown('''
-    The **#30DaysOfStreamlit** is a coding challenge designed to help you get started in building Streamlit apps.
+    **#30DaysOfStreamlit** es un desafío diseñado para ayudarlo a comenzar a crear aplicaciones Streamlit.
     
-    Particularly, you'll be able to:
-    - Set up a coding environment for building Streamlit apps
-    - Build your first Streamlit app
-    - Learn about all the awesome input/output widgets to use for your Streamlit app
+    En particular, podrás:
+    - Configure un entorno de desarrollo para construir aplicaciones Streamlit
+    - Construir tu primer aplicacion Streamlit
+    - Aprender acerca de todos los sorprendentes componentes para usar en tu aplicacion Streamlit
     ''')
 
 # Sidebar
-st.sidebar.header('About')
-st.sidebar.markdown('[Streamlit](https://streamlit.io) is a Python library that allows the creation of interactive, data-driven web applications in Python.')
+st.sidebar.header('Acerca')
+st.sidebar.markdown('[Streamlit](https://streamlit.io) es una libreria de Python que permite la creacion de aplicaciones web interactivas, basadas en datos de Python .')
 
-st.sidebar.header('Resources')
+st.sidebar.header('Recursos')
 st.sidebar.markdown('''
-- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Documentacion de Streamlit](https://docs.streamlit.io/)
 - [Cheat sheet](https://docs.streamlit.io/library/cheatsheet)
-- [Book](https://www.amazon.com/dp/180056550X) (Getting Started with Streamlit for Data Science)
+- [Libro](https://www.amazon.com/dp/180056550X) (Getting Started with Streamlit for Data Science)
 - [Blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/) (How to master Streamlit for data science)
 ''')
 
-st.sidebar.header('Deploy')
-st.sidebar.markdown('You can quickly deploy Streamlit apps using [Streamlit Cloud](https://streamlit.io/cloud) in just a few clicks.')
+st.sidebar.header('Despliegue')
+st.sidebar.markdown('Tu puedes desplegar rapidamente aplicaciones Streamlit usando [Streamlit Cloud](https://streamlit.io/cloud) in just a few clicks.')
 
 # Display content
 for i in days_list:
