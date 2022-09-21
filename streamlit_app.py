@@ -53,7 +53,6 @@ st.sidebar.markdown('Tu puedes desplegar rápidamente aplicaciones Streamlit usa
 
 # Display content
 for i in enumerate(days_list):
-    print((i, v))
     if selected_day == i:
         st.markdown(f'# 🗓️ {i}')
         with open(f'content/{j}.md', 'r') as f:
