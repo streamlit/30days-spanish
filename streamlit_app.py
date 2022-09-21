@@ -52,17 +52,16 @@ st.sidebar.header('Despliegue')
 st.sidebar.markdown('Tu puedes desplegar rápidamente aplicaciones Streamlit usando [Streamlit Cloud](https://streamlit.io/cloud) en solo algunos clicks.')
 
 # Display content
-for i, v in days_list:
+for i in enumerate(days_list):
     print((i, v))
     if selected_day == i:
         st.markdown(f'# 🗓️ {i}')
-        j = i.replace(' ', '')
         with open(f'content/{j}.md', 'r') as f:
             st.markdown(f.read())
-        if os.path.isfile(f'content/figures/{j}.csv') == True:
+        if os.path.isfile(f'content/figures/Day{i}.csv') == True:
             st.markdown('---')
             st.markdown('### Ilustraciones')
-            df = pd.read_csv(f'content/figures/{j}.csv', engine='python')
+            df = pd.read_csv(f'content/figures/Day{i}.csv', engine='python')
             for i in range(len(df)):
                 st.image(f'content/images/{df.img[i]}')
                 st.info(f'{df.figure[i]}: {df.caption[i]}')
