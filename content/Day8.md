@@ -26,14 +26,14 @@ from datetime import time, datetime
 
 st.header('st.slider')
 
-# Example 1
+# Ejemplo 1
 
 st.subheader('Slider')
 
 age = st.slider('How old are you?', 0, 130, 25)
 st.write("I'm ", age, 'years old')
 
-# Example 2
+# Ejemplo 2
 
 st.subheader('Range slider')
 
@@ -42,7 +42,7 @@ values = st.slider(
      0.0, 100.0, (25.0, 75.0))
 st.write('Values:', values)
 
-# Example 3
+# Ejemplo 3
 
 st.subheader('Range time slider')
 
@@ -51,7 +51,7 @@ appointment = st.slider(
      value=(time(11, 30), time(12, 45)))
 st.write("You're scheduled for:", appointment)
 
-# Example 4
+# Ejemplo 4
 
 st.subheader('Datetime slider')
 
@@ -75,7 +75,7 @@ A esto le sigue la creación de un texto de encabezado para la aplicación::
 st.header('st.slider')
 ```
 
-**Example 1**
+**Ejemplo 1**
 
 Deslizador:
 
@@ -93,7 +93,7 @@ El primer argumento de entrada muestra el texto justo encima del componente **sl
 
 Los siguientes tres enteros `0, 130, 25` representan los valores mínimo, máximo y predeterminado, respectivamente.
 
-**Example 2**
+**Ejemplo 2**
 
 Slider de rango:
 
@@ -112,7 +112,7 @@ El primer argumento muestra el texto justo encima del control deslizante de **ra
 
 Los siguientes tres argumentos `0.0, 100.0, (25.0, 75.0)` representan los valores mínimo y máximo, mientras que la última tupla indica los valores predeterminados que se utilizarán como valores límite inferior (25.0) y superior (75.0) seleccionados.
 
-**Example 3**
+**Ejemplo 3**
 
 Deslizador para rango de tiempo:
 
@@ -131,7 +131,7 @@ El primer argumento muestra el texto justo encima del control deslizante de **ra
 
 Los valores predeterminados para los pares de valores límite inferior y superior de fecha y hora se establecen en 11:30 y 12:45, respectivamente.
 
-**Example 4**
+**Ejemplo 4**
 
 Datetime slider:
 

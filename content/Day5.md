@@ -33,15 +33,15 @@ import streamlit as st
 
 st.header('st.write')
 
-# Example 1
+# Ejemplo 1
 
 st.write('Hello, *World!* :sunglasses:')
 
-# Example 2
+# Ejemplo 2
 
 st.write(1234)
 
-# Example 3
+# Ejemplo 3
 
 df = pd.DataFrame({
      'first column': [1, 2, 3, 4],
@@ -49,11 +49,11 @@ df = pd.DataFrame({
      })
 st.write(df)
 
-# Example 4
+# Ejemplo 4
 
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 
-# Example 5
+# Ejemplo 5
 
 df2 = pd.DataFrame(
      np.random.randn(200, 3),
@@ -77,21 +77,21 @@ Seguimos por crear un encabezado de texto para la aplicación:
 st.header('st.write')
 ```
 
-**Example 1**
+**Ejemplo 1**
 Su caso de uso básico es mostrar texto y texto con formato Markdown:
 
 ```python
 st.write('Hello, *World!* :sunglasses:')
 ```
 
-**Example 2**
+**Ejemplo 2**
 Como se mencionó anteriormente, también se puede usar para mostrar otros formatos de datos, como números:
 
 ```python
 st.write(1234)
 ```
 
-**Example 3**
+**Ejemplo 3**
 Los DataFrames también se pueden mostrar de la siguiente manera:
 
 ```python
@@ -102,14 +102,14 @@ df = pd.DataFrame({
 st.write(df)
 ```
 
-**Example 4**
+**Ejemplo 4**
 Puedes pasar múltiples argumentos:
 
 ```python
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 ```
 
-**Example 5**
+**Ejemplo 5**
 Finalmente, también puede mostrar gráficos pasándolos a una variable de la siguiente manera:
 
 ```python
