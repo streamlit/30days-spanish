@@ -4,7 +4,7 @@ Podemos personalizar el tema ajustando los parámetros en `config.toml`, que es 
 
 ## What we're building?
 
-Una simple aplicacion que muestra el resultado de la personalizacion de nuestro tema. Esto fue posible gracias a la personalizacion de codigo HTML HEX dentro del archivo [`.streamlit/config.toml`](https://github.com/dataprofessor/streamlit-custom-theme/blob/master/.streamlit/config.toml).
+Una simple aplicación que muestra el resultado de la personalización de nuestro tema. Esto fue posible gracias a la personalización de código HTML HEX dentro del archivo [`.streamlit/config.toml`](https://github.com/dataprofessor/streamlit-custom-theme/blob/master/.streamlit/config.toml).
 
 ## Demo app
 
@@ -43,7 +43,7 @@ font="monospace"
 ```
 
 ## Explicación línea por línea
-Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` así:
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la librería `streamlit` como `st` de la siguiente manera:
 ```python
 import streamlit as st
 ```
@@ -53,7 +53,7 @@ A esto le sigue la creación de un título para la aplicación:
 st.title('Theming with config.toml')
 ```
 
-A continuacion, vamos a mostrar el contenido del archivo `.streamlit/config.toml` por medio de `st.write` seguido por el codigo real via `st.code`:
+A continuación, vamos a mostrar el contenido del archivo `.streamlit/config.toml` por medio de `st.write` seguido por el código real via `st.code`:
 ```python
 st.write('Contents of the ./streamlit/config.toml file of this app')
 

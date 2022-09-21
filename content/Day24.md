@@ -69,7 +69,7 @@ st.info(b1-b0)
 ```
 
 ## Explicación línea por línea
-Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la libreria `streamlit` como `st`, así como otras librerias utilizadas, de la siguiente manera:
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la librería `streamlit` como `st`, así como otras librerías utilizadas, de la siguiente manera:
 ```python
 import streamlit as st
 import numpy as np
@@ -128,6 +128,6 @@ Observe cómo la primera ejecución puede proporcionar un tiempo de ejecución m
 ## Otras lecturas
 - [Documentación de la API `st.cache`](https://docs.streamlit.io/library/api-reference/performance/st.cache)
 - [Optimizar el rendimiento con `st.cache`](https://docs.streamlit.io/library/advanced-features/caching)
-- [Primitivos de caché experimentales] (https://docs.streamlit.io/library/advanced-features/experimental-cache-primitives)
+- [Primitivos de caché experimentales](https://docs.streamlit.io/library/advanced-features/experimental-cache-primitives)
 - [`st.experimental_memo`](https://docs.streamlit.io/library/api-reference/performance/st.experimental_memo)
 - [`st.experimental_singleton`](https://docs.streamlit.io/library/api-reference/performance/st.experimental_singleton)

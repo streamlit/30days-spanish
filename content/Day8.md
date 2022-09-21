@@ -6,7 +6,7 @@ Se admiten los siguientes tipos de datos: int, float, date, time y datetime.
 
 ## Que estamos construyendo?
 
-Una aplicacion simple que muestra diferentes maneras de como aceptar datos del usuario con el control deslizante
+Una aplicación simple que muestra diferentes maneras de como aceptar datos del usuario con el control deslizante
 
 Comportamiento de la aplicación:
 1. El usuario selecciona el valor ajustando el control deslizante
@@ -17,7 +17,7 @@ Comportamiento de la aplicación:
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.slider/)
 
 
-## Codigo
+## Código
 He aquí cómo usar st.slider:
 
 ```python

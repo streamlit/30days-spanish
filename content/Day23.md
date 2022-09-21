@@ -48,7 +48,7 @@ st.write(f'Hello **{firstname} {surname}**, how are you?')
 ```
 
 ## Explicación línea por línea
-Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la libreria `streamlit` como `st` de la siguiente manera:
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la librería `streamlit` como `st` de la siguiente manera:
 ```python
 import streamlit as st
 ```
@@ -84,7 +84,7 @@ st.header('2. Contents of st.experimental_get_query_params')
 st.write(st.experimental_get_query_params())
 ```
 
-Finalmente, seleccionaremos y mostraremos información dependiendo de los parametros de la URL:
+Finalmente, seleccionaremos y mostraremos información dependiendo de los parámetros de la URL:
 ```python
 # 3. Retrieving and displaying information from the URL
 st.header('3. Retrieving and displaying information from the URL')

@@ -13,7 +13,7 @@ Los formularios tienen algunas restricciones:
 - `st.button` y `st.download_button` no se pueden agregar a un formulario.
 - Los formularios pueden aparecer en cualquier lugar de su aplicación (barra lateral, columnas, etc.), pero no se pueden incrustar dentro de otros formularios.
 
-Para obtener más información sobre los formularios, consulte nuestra [publicación de blog] (https://blog.streamlit.io/introducing-submit-button-and-forms/).
+Para obtener más información sobre los formularios, consulte nuestra [publicación de blog](https://blog.streamlit.io/introducing-submit-button-and-forms/).
 
 ## Demo app
 
@@ -69,7 +69,7 @@ st.write('Selected value: ', selected_val)
 ```
 
 ## Explicación línea por línea
-Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la libreria `streamlit` como `st` de la siguiente manera:
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la librería `streamlit` como `st` de la siguiente manera:
 ```python
 import streamlit as st
 ```
@@ -132,4 +132,4 @@ st.write('Selected value: ', selected_val)
 
 ## Otras lecturas
 - [`st.form`](https://docs.streamlit.io/library/api-reference/control-flow/st.form)
-- [Presentamos el botón Enviar y los formularios] (https://blog.streamlit.io/introducing-submit-button-and-forms/)
+- [Presentamos el botón Enviar y los formularios](https://blog.streamlit.io/introducing-submit-button-and-forms/)

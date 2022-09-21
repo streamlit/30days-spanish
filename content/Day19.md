@@ -52,7 +52,7 @@ with col3:
 ```
 
 ## Explicación línea por línea
-Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` de la siguiente manera:
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la librería `streamlit` como `st` de la siguiente manera:
 ```python
 import streamlit as st
 ```
@@ -82,7 +82,7 @@ user_emoji = st.sidebar.selectbox('Choose an emoji', ['', '😄', '😆', '😊'
 user_food = st.sidebar.selectbox('What is your favorite food?', ['', 'Tom Yum Kung', 'Burrito', 'Lasagna', 'Hamburger', 'Pizza'])
 ```
 
-Finalmente, crearemos 3 columnas usando el comando `st.columns` que corresponde a `col1`, `col2` y `col3`. Luego, asignamos contenidos a cada una de las columnas mediante la creación de bloques de código individuales que comienzan con la instrucción `with`. Debajo de esto, creamos declaraciones condicionales que muestran 1 de 2 textos alternativos dependiendo de si el usuario proporcionó datos (especificados en la barra lateral) o no. De forma predeterminada, la página muestra texto debajo de la instrucción `else`. Al usuario proporcionar datos, la información correspondiente del usuario se muestra bajo el encabezado `Output`.
+Finalmente, crearemos 3 columnas usando el comando `st.columns` que corresponde a `col1`, `col2` y `col3`. Luego, asignamos contenidos a cada una de las columnas mediante la creación de bloques de código individuales que comienzan con la instrucción `with`. Debajo de esto, creamos declaraciones condicionales que muestran 1 de 2 textos alternativos dependiendo de si el usuario proporcionó datos (especificados en la barra lateral) o no. De forma predeterminada, la página muestra texto debajo de la instrucción `else`. Al proporcionar datos, la información correspondiente del usuario se muestra bajo el encabezado `Output`.
 ```python
 st.header('Output')
 

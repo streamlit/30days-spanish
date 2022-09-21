@@ -6,9 +6,9 @@ Git es un software para realizar un seguimiento de todos los cambios realizados 
 
 Alojando su aplicación Streamlit en un repositorio GitHub permitirá que las aplicaciones se implementen en la nube (el próximo desafío).
 
-## Regístrese en GitHub
+## Regístrate en GitHub
 
-En primer lugar, regístrese para obtener una cuenta de [GitHub](https://github.com/).
+En primer lugar, regístrate para obtener una cuenta de [GitHub](https://github.com/).
 
 ## Crear un repositorio de GitHub
 

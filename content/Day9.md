@@ -36,14 +36,14 @@ st.line_chart(chart_data)
 ```
 
 ## Explicación línea por línea
-Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st`, así como otras bibliotecas como esta:
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la librería `streamlit` como `st`, así como otras de la siguiente manera:
 ```python
 import streamlit as st
 import pandas as pd
 import numpy as np
 ```
 
-A continuación, creamos un texto de encabezado para la aplicación:
+A continuación, creamos un encabezado para la aplicación:
 ```python
 st.header('Line chart')
 ```

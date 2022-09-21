@@ -30,7 +30,7 @@ st.write('Your favorite color is ', option)
 ```
 
 ## Explicación línea por línea
-Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` así:
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la librería `streamlit` como `st` de la siguiente manera:
 ```python
 import streamlit as st
 ```
@@ -47,8 +47,8 @@ option = st.selectbox(
      'What is your favorite color?',
      ('Blue', 'Red', 'Green'))
 ```
-Como podemos ver en el cuadro de código anterior, el comando `st.selectbox()` acepta 2 argumentos de entrada:
-1. El texto que va encima del widget de selección, es decir, `'What is your favorite color?'`
+Como podemos ver en el cuadro de código anterior, el comando `st.selectbox()` acepta 2 argumentos:
+1. El texto que va encima del componente de selección, es decir, `'What is your favorite color?'`
 2. Los valores posibles para seleccionar `('Blue', 'Red', 'Green')`
 
 Finalmente, imprimiremos el color seleccionado de la siguiente manera:

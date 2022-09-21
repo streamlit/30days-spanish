@@ -1,6 +1,6 @@
 # st.checkbox
 
-`st.checkbox` muestra un componente de casilla de verificacion.
+`st.checkbox` muestra un componente de casilla de verificación.
 
 ## Demo app
 
@@ -30,12 +30,12 @@ if cola:
 ```
 
 ## Explicación línea por línea
-Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` así:
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la librería `streamlit` como `st` de la siguiente manera:
 ```python
 import streamlit as st
 ```
 
-A esto le sigue la creación de un texto de encabezado para la aplicación:
+A esto le sigue la creación de un encabezado para la aplicación:
 ```python
 st.header('st.checkbox')
 ```
@@ -45,14 +45,14 @@ A continuación, haremos una pregunta a través de `st.write`:
 st.write ('What would you like to order?')
 ```
 
-Luego vamos a proporcionar algunos elementos de menú para marcar:
+Luego vamos a proporcionar algunos elementos de menú para seleccionar:
 ```python
 icecream = st.checkbox('Ice cream')
 coffee = st.checkbox('Coffee')
 cola = st.checkbox('Cola')
 ```
 
-Finalmente, vamos a imprimir texto personalizado según la casilla de verificación que se marcó:
+Finalmente, vamos a imprimir texto personalizado según la casilla de verificación que se seleccionó:
 ```python
 if icecream:
      st.write("Great! Here's some more 🍦")

@@ -8,8 +8,8 @@ Además de poder mostrar texto, también se puede mostrar lo siguiente mediante 
 - Muestra cadenas; funciona como `st.markdown()`
 - Muestra un `dict` de Python
 - Muestra `pandas` DataFrame se puede mostrar como una tabla
-- Graficos/Esquemas/Representaciones de `matplotlib`, `plotly`, `altair`, `graphviz`, `bokeh`
-- Y mas (ver [st.write en la documentacion de Streamlit](https://docs.streamlit.io/library/api-reference/write-magic/st.write))
+- Gráficos/Esquemas/Representaciones de `matplotlib`, `plotly`, `altair`, `graphviz`, `bokeh`
+- Y mas (ver [st.write en la documentación de Streamlit](https://docs.streamlit.io/library/api-reference/write-magic/st.write))
 
 ## Que estamos construyendo?
 
@@ -17,11 +17,11 @@ Una aplicación sencilla que muestra las diversas formas de utilizar el comando 
 
 ## Demo app
 
-La aplicacion de Streamlit deberia verse como la mostrada en el siguiente link:
+La aplicación de Streamlit debería verse como la mostrada en el siguiente link:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.write/)
 
-## Codigo
+## Código
 
 Así es como se usa st.write:
 
@@ -63,15 +63,15 @@ c = alt.Chart(df2).mark_circle().encode(
 st.write(c)
 ```
 
-## Explicacion linea por linea
+## Explicación linea por linea
 
-Lo primero que tenemos que hacer cuando creamos una aplicacion de Streamlit es comenzar importando la libreria `streamlit` de la siguiente manera:
+Lo primero que tenemos que hacer cuando creamos una aplicación de Streamlit es comenzar importando la librería `streamlit` de la siguiente manera:
 
 ```python
 import streamlit as st
 ```
 
-Seguimos por crear un encabezado de texto para la aplicacion:
+Seguimos por crear un encabezado de texto para la aplicación:
 
 ```python
 st.header('st.write')
@@ -103,7 +103,7 @@ st.write(df)
 ```
 
 **Example 4**
-Puedes pasar multiples argumentos:
+Puedes pasar múltiples argumentos:
 
 ```python
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
@@ -123,23 +123,23 @@ st.write(c)
 
 ## Demo app
 
-La aplicacion de Streamlit deberia verse como la mostrada en el siguiente link:
+La aplicación de Streamlit debería verse como la mostrada en el siguiente link:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.write/)
 
 ## Siguientes pasos
 
-Ahora que has creado la app localmente, es hora de desplegarla en [Streamlit Cloud](https://streamlit.io/cloud) como lo vamos a mencionar proximamente en un proximo desafio.
+Ahora que has creado la app localmente, es hora de desplegarla en [Streamlit Cloud](https://streamlit.io/cloud) como lo vamos a mencionar luego en un próximo desafío.
 
-Como esta es la primer semana de tu desafio, nosotros proveemos el codigo completo (como es mostrado en el codigo anterior) y la solucion (la app de ejemplo) dentro de esta web.
+Como esta es la primer semana de tu desafío, nosotros proveemos el código completo (como es mostrado en el código anterior) y la solución (la app de ejemplo) dentro de esta web.
 
-Avanzando en el proximo desafio, es recomendable que intentes implementar la Streamlit app por vos mismo.
+Avanzando en el próximo desafío, es recomendable que intentes implementar la Streamlit app por vos mismo.
 
 No te preocupes si te trabas, tu siempre puedes tomar un vistazo a la solucion.
 
 ## Otras lecturas
 
-A demas de [`st.write`](https://docs.streamlit.io/library/api-reference/write-magic/st.write), puedes explorar otras manera para mostrar texto:
+A demás de [`st.write`](https://docs.streamlit.io/library/api-reference/write-magic/st.write), puedes explorar otras manera para mostrar texto:
 
 - [`st.markdown`](https://docs.streamlit.io/library/api-reference/text/st.markdown)
 - [`st.header`](https://docs.streamlit.io/library/api-reference/text/st.header)

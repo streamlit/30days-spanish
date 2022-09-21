@@ -44,7 +44,7 @@ with col3:
 ```
 
 ## Explicación línea por línea
-Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la libreria `streamlit` como `st` y la libreria `requests` de la siguiente manera:
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la librería `streamlit` como `st` y la también `requests` de la siguiente manera:
 ```python
 import streamlit as st
 import requests

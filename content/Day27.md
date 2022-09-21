@@ -4,7 +4,7 @@ Streamlit Elements es un componente de terceros creado por [okld](https://github
 
 ## Como usarlo?
 
-### Instalacion
+### Instalación
 
 El primer paso es instalar Streamlit Elements en su entorno:
 
@@ -102,7 +102,7 @@ with elements("demo"):
 
         # Primera tarjeta, el editor de código.
         #
-        # Utilizamos el parametro `key` para identificar el elemento correcto
+        # Utilizamos el parámetro `key` para identificar el elemento correcto
         #
         # Para hacer que el contenido de la tarjeta llene automáticamente la altura disponible, usaremos CSS flexbox.
         # sx es un parámetro disponible con cada componente de Material UI para definir atributos CSS.
@@ -132,10 +132,10 @@ with elements("demo"):
                 # Luego, queremos recuperar los cambios realizados en el contenido del editor.
                 # Al verificar la documentación de Monaco, hay una propiedad onChange que toma una función.
                 # Esta función se llama cada vez que se realiza un cambio, y el valor del contenido actualizado se pasa en
-                # el primer parametro (onChange: https://github.com/suren-atoyan/monaco-react#props)
+                # el primer parámetro (onChange: https://github.com/suren-atoyan/monaco-react#props)
                 #
-                # Streamlit Elements proveé una funcion especial sync(). Esta funcion crea un Callback
-                # automaticamente redirecciona sus parametros al estado de sesion de Streamlit.
+                # Streamlit Elements proveé una función especial sync(). Esta función crea un Callback y
+                # automáticamente redirecciona sus parámetros al estado de sesión de Streamlit.
                 #
                 # Ejemplos
                 # --------
@@ -174,14 +174,13 @@ with elements("demo"):
                 # el contenido de Monaco, Streamlit no va a ser notificado directamente, lo que previene que se recargue todo el tiempo.
                 # Entonces necesitamos otro evento para iniciar la actualización.
                 #
-                # La solucion es crear un botón que dispare un Callback al hacer click.
+                # La solución es crear un botón que dispare un Callback al hacer click.
                 # 
                 # Nuestro callback no necesita hacer nada en particular. Tu puedes incluso crear una
-                # funcion vacia de Python, o utilizar sync() sin ningún argumento.
+                # función vacía de Python, o utilizar sync() sin ningún argumento.
                 #
-                # Now, everytime you will click that button, onClick callback will be fired, but every other
                 # Ahora, cada vez que hagas click en ese botón, el callback de onClick va a ser iniciado, pero
-                # cualquier otro lazy callback que cambió va a ser tambien llamado. 
+                # cualquier otro lazy callback que cambió va a ser también llamado. 
 
                 mui.Button("Apply changes", onClick=sync())
 

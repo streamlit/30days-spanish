@@ -2,9 +2,9 @@
 
 [`streamlit-shap`](https://github.com/snehankekre/streamlit-shap) es un componente de Streamlit que proporciona un contenedor para mostrar gráficos [SHAP](https://github.com/slundberg/shap) en [Streamlit](https://streamlit.io/). 
 
-The library is developed by our in-house staff [Snehan Kekre](https://github.com/snehankekre) who also maintains the [Streamlit Documentation](https://docs.streamlit.io/) website.
+La librería está desarrollada por nuestro personal interno [Snehan Kekre](https://github.com/snehankekre) que también mantiene el sitio web de [Streamlit Documentation](https://docs.streamlit.io/).
 
-En primer lugar, instale Streamlit (¡por supuesto!) y luego instale la libreria `streamlit-shap`:
+En primer lugar, instale Streamlit (¡por supuesto!) y luego instale la librería `streamlit-shap`:
 ```bash
 pip install streamlit
 pip install streamlit-shap
@@ -93,7 +93,7 @@ with st.expander('Force plot'):
 ```
 
 ## Explicación línea por línea
-Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` de la siguiente manera:
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la librería `streamlit` como `st` de la siguiente manera:
 ```python
 import streamlit as st
 from streamlit_shap import st_shap

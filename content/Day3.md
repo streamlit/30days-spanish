@@ -1,26 +1,26 @@
 # st.button
 
-`st.button` permite mostrar un boton.
+`st.button` permite mostrar un botón.
 
 ## Que estamos construyendo?
 
-Una simple aplicacion que imprime condicionalmente diferentes mensajes dependiendo si el boton fue presionado o no.
+Una simple aplicación que imprime condicionalmente diferentes mensajes dependiendo si el botón fue presionado o no.
 
 
-Comportamiento de la aplicacion:
+Comportamiento de la aplicación:
 
-1. Por defecto, la aplicacion imprime `Goodbye`
-2. Una vez que se hace click sobre el boton, la aplicacion imprime `Why hello there`
+1. Por defecto, la aplicación imprime `Goodbye`
+2. Una vez que se hace click sobre el botón, la aplicación imprime `Why hello there`
 
 ## Demo app
 
-La aplicacion de Streamlit deberia verse como la mostrada en el siguiente link:
+La aplicación de Streamlit debería verse como la mostrada en el siguiente link:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.button/)
 
-## Codigo
+## Código
 
-Aqui tenemos el codigo para implementar la aplicacion previamente mencionada:
+Aquí tenemos el código para implementar la aplicación previamente mencionada:
 
 ```python
 import streamlit as st
@@ -33,16 +33,16 @@ else:
      st.write('Goodbye')
 ```
 
-## Explicacion linea por linea
+## Explicación linea por linea
 
 
-Lo primero que tenemos que hacer cuando creamos una aplicacion de Streamlit es comenzar importando la libreria `streamlit` de la siguiente manera:
+Lo primero que tenemos que hacer cuando creamos una aplicación de Streamlit es comenzar importando la librería `streamlit` de la siguiente manera:
 
 ```python
 import streamlit as st
 ```
 
-Seguimos por crear un encabezado de texto para la aplicacion:
+Seguimos por crear un encabezado de texto para la aplicación:
 
 ```python
 st.header('st.button')
@@ -57,9 +57,9 @@ else:
      st.write('Goodbye')
 ```
 
-Como podemos ver en el anterior codigo, el comando `st.button()` admite el argumento `label` con el valor `Say hello`, el cual es el texto que el boton muestra.
+Como podemos ver en el anterior código, el comando `st.button()` admite el argumento `label` con el valor `Say hello`, el cual es el texto que el botón muestra.
 
-El comando `st.write` es usado para imprimir mensajes tales como `Why hello there` o `Goodbye` dependiendo si el boton fue presionado o no, lo cual es implementado de la siguiente manera:
+El comando `st.write` es usado para imprimir mensajes tales como `Why hello there` o `Goodbye` dependiendo si el botón fue presionado o no, lo cual es implementado de la siguiente manera:
 
 
 ```python
@@ -72,18 +72,18 @@ y
 st.write('Goodbye')
 ```
 
-Es importante tener en cuenta que los `st.write` estan colocados debajo de las condiciones `if` y `else` para realizer el mencionado proceso de mostrar mensajes alternativos.
+Es importante tener en cuenta que los `st.write` están colocados debajo de las condiciones `if` y `else` para realizar el mencionado proceso de mostrar mensajes alternativos.
 
 ## Siguientes pasos
 
-Ahora que has creado la app localmente, es hora de desplegarla en [Streamlit Cloud](https://streamlit.io/cloud) como lo vamos a mencionar proximamente en un proximo desafio.
+Ahora que has creado la app localmente, es hora de desplegarla en [Streamlit Cloud](https://streamlit.io/cloud) como lo vamos a mencionar en un próximo desafío.
 
-Como esta es la primer semana de tu desafio, nosotros proveemos el codigo completo (como es mostrado en el codigo anterior) y la solucion (la app de ejemplo) dentro de esta web.
+Como esta es la primer semana de tu desafío, nosotros proveemos el código completo (como es mostrado en el código anterior) y la solución (la app de ejemplo) dentro de esta web.
 
-Avanzando en el proximo desafio, es recomendable que intentes implementar la Streamlit app por vos mismo.
+Avanzando en el próximo desafío, es recomendable que intentes implementar la Streamlit app por vos mismo.
 
-No te preocupes si te trabas, tu siempre puedes tomar un vistazo a la solucion. 
+No te preocupes si te trabas, tu siempre puedes tomar un vistazo a la solución. 
 
 ## Referencias
 
-Lee acerca [`st.button`](https://docs.streamlit.io/library/api-reference/widgets/st.button) en la documentacion de Streamlit.
+Lee acerca [`st.button`](https://docs.streamlit.io/library/api-reference/widgets/st.button) en la documentación de Streamlit.

@@ -27,7 +27,7 @@ st.balloons()
 ```
 
 ## Explicación línea por línea
-Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` junto con la libreria `time` de la siguiente manera:
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la librería `streamlit` como `st` junto con `time` de la siguiente manera:
 ```python
 import streamlit as st
 import time
@@ -44,7 +44,7 @@ with st.expander('About this app'):
      st.write('You can now display the progress of your calculations in a Streamlit app with the `st.progress` command.')
 ```
 
-Finalmente, definimos una barra de progreso y la instanciamos con un valor inicial `0`. Luego, un ciclo `for` va a iterar desde `0` hasta `100`. Por cada iteracion, usamos `time.sleep(0.05)` para permitir a la aplicacion esperar durante `0.05` antes de sumar `1` a la barra de progreso `my_bar` y al hacerlo, la visualización gráfica de la barra aumenta con cada iteración.
+Finalmente, definimos una barra de progreso y la instanciamos con un valor inicial `0`. Luego, un ciclo `for` va a iterar desde `0` hasta `100`. Por cada iteración, usamos `time.sleep(0.05)` para permitir a la aplicación esperar durante `0.05` antes de sumar `1` a la barra de progreso `my_bar` y al hacerlo, la representación gráfica de la barra aumenta con cada iteración.
 ```python
 my_bar = st.progress(0)
 

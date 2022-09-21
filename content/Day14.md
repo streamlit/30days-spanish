@@ -2,7 +2,7 @@
 
 Los componentes son módulos Python de terceros que amplían lo que es posible con Streamlit [[1](https://docs.streamlit.io/library/components)].
 
-## Que componentes estan disponibles?
+## Que componentes están disponibles?
 
 Hay varias docenas de componentes de Streamlit que aparecen en el sitio web de Streamlit [[2](https://streamlit.io/components)].
 

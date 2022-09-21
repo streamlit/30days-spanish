@@ -1,6 +1,6 @@
 # st.multiselect
 
-`st.multiselect` muestra un componente de seleccion multiple.
+`st.multiselect` muestra un componente de selección múltiple.
 
 ## Demo app
 
@@ -22,12 +22,12 @@ st.write('You selected:', options)
 ```
 
 ## Explicación línea por línea
-Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` así:
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la librería `streamlit` como `st` de la siguiente manera:
 ```python
 import streamlit as st
 ```
 
-A esto le sigue la creación de un texto de encabezado para la aplicación:
+A esto le sigue la creación de un encabezado para la aplicación:
 ```python
 st.header('st.multiselect')
 ```
