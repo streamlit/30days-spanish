@@ -24,7 +24,7 @@ query_params = st.experimental_get_query_params()
 if query_params and query_params["challenge"][0] in days_list:
     st.session_state.day = query_params["challenge"][0]
 
-selected_day = st.selectbox('Comenzar con el desafío 👇', enumerate(days_list), key="day", on_change=update_params)
+selected_day = st.selectbox('Comenzar con el desafío 👇', days_list, key="day", on_change=update_params)
 
 with st.expander("Acerca de #30DaysOfStreamlit"):
     st.markdown('''
@@ -52,15 +52,16 @@ st.sidebar.header('Despliegue')
 st.sidebar.markdown('Tu puedes desplegar rápidamente aplicaciones Streamlit usando [Streamlit Cloud](https://streamlit.io/cloud) en solo algunos clicks.')
 
 # Display content
-for i in enumerate(days_list):
+for i in days_list:
     if selected_day == i:
         st.markdown(f'# 🗓️ {i}')
+        j = i.replace(' ', '').replace('Día', 'Day')
         with open(f'content/{j}.md', 'r') as f:
             st.markdown(f.read())
-        if os.path.isfile(f'content/figures/Day{i}.csv') == True:
+        if os.path.isfile(f'content/figures/{j}.csv') == True:
             st.markdown('---')
             st.markdown('### Ilustraciones')
-            df = pd.read_csv(f'content/figures/Day{i}.csv', engine='python')
+            df = pd.read_csv(f'content/figures/{j}.csv', engine='python')
             for i in range(len(df)):
                 st.image(f'content/images/{df.img[i]}')
                 st.info(f'{df.figure[i]}: {df.caption[i]}')
