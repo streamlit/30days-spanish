@@ -1,32 +1,32 @@
-# How to make a zero-shot learning text classifier using Hugging Face and Streamlit
+# Como hacer un clasificador de texto zero-shot usando Hugging Face y Streamlit
 
-In today's challenge, [Charly Wargnier](https://twitter.com/DataChaz) will walk us through the process of developing a zero-shot learning text classifier using Hugging Face and Streamlit.
+En el desafío de hoy, [Charly Wargnier](https://twitter.com/DataChaz) nos guiará a través del proceso de desarrollo de un clasificador de texto zero-shot usando Hugging Face y Streamlit.
 
 ## Introduction
 
-Hey Streamliters!
+¡Hola, Streamliters!
 
-Today I'm excited to have the opportunity to contribute to the 30DaysofStreamlit challenge via this hands-on tutorial! 🎈
+¡Hoy estoy emocionado de tener la oportunidad de contribuir al desafío 30DaysofStreamlit a través de este tutorial! 🎈
 
-## What are we building?
+## Que estamos construyendo?
 
-We will create a zero-shot learning text classifier using Hugging Face's API inference and Distilbart!
+¡Crearemos un clasificador de texto zero-shot utilizando la API de Hugging Face y Distilbart!
 
-You will have the mighty power to classify keyphrases on-the-fly, fast, and without pre ML training!
+¡Tendrás el gran poder de clasificar frases clave sobre la marcha, rápido y sin entrenamiento previo de ML!
 
-Create classifying labels, paste your keyphrases, and you're off!
+Cree etiquetas de clasificación, pegue sus frases clave, ¡y listo!
 
-You can set these labels anything, e.g.:
+Puede establecer estas etiquetas de cualquier manera, por ejemplo:
 
-- Positive, Negative and Neutral for sentiment analysis
-- Angry, Happy, Emotional for emotion analysis
-- Navigational, Transactional, Informational for intent classification purposes
-- Your product range  (bags, shoes, boots etc.)
+- Positivo, Negativo y Neutral para análisis de sentimiento
+- Enojado, Feliz, Emocional para el análisis de emociones.
+- Navegacional, Transaccional, Informativo para propósitos de clasificación de intención
+- Su gama de productos (bolsos, zapatos, botas, etc.)
 
-You decide! 
+¡Tú decides! 
 
-Excited? Let's dive in! 
+¿Entusiasmado? ¡Vamos a sumergirnos! 
 
-## Read the full blog
-👉 [Read the full blog](https://www.charlywargnier.com/post/how-to-create-a-zero-shot-learning-text-classifier-using-hugging-face-and-streamlit)
+## Lea el blog completo
+👉 [Leer el blog completo](https://www.charlywargnier.com/post/how-to-create-a-zero-shot-learning-text-classifier-using-hugging-face-and-streamlit)
 
