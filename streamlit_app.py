@@ -15,7 +15,7 @@ md_files = sorted([int(x.strip('Day').strip('.md')) for x in glob.glob1('content
 col1, col2, col3 = st.columns((1,4,1))
 with col2:
     st.image(Image.open('streamlit-logo-secondary-colormark-darktext.png'))
-st.markdown('# 30 Days of Streamlit')
+st.markdown('# 30 Dias de Streamlit')
 
 days_list = [f'Day {x}' for x in md_files]
 
