@@ -15,7 +15,7 @@ md_files = sorted([int(x.strip('Day').strip('.md')) for x in glob.glob1('content
 col1, col2, col3 = st.columns((1,4,1))
 with col2:
     st.image(Image.open('streamlit-logo-secondary-colormark-darktext.png'))
-st.markdown('# 30 Dias de Streamlit')
+st.markdown('# 30 Días de Streamlit')
 
 days_list = [f'Día {x}' for x in md_files]
 
@@ -24,7 +24,7 @@ query_params = st.experimental_get_query_params()
 if query_params and query_params["challenge"][0] in days_list:
     st.session_state.day = query_params["challenge"][0]
 
-selected_day = st.selectbox('Comenzar con el desafio 👇', days_list, key="day", on_change=update_params)
+selected_day = st.selectbox('Comenzar con el desafío 👇', days_list, key="day", on_change=update_params)
 
 with st.expander("Acerca de #30DaysOfStreamlit"):
     st.markdown('''
@@ -32,13 +32,13 @@ with st.expander("Acerca de #30DaysOfStreamlit"):
     
     En particular, podrás:
     - Configure un entorno de desarrollo para construir aplicaciones Streamlit
-    - Construir tu primer aplicacion Streamlit
-    - Aprender acerca de todos los sorprendentes componentes para usar en tu aplicacion Streamlit
+    - Construir tu primer aplicación Streamlit
+    - Aprender acerca de todos los sorprendentes componentes para usar en tu aplicación Streamlit
     ''')
 
 # Sidebar
 st.sidebar.header('Acerca')
-st.sidebar.markdown('[Streamlit](https://streamlit.io) es una libreria de Python que permite la creacion de aplicaciones web interactivas, basadas en datos de Python .')
+st.sidebar.markdown('[Streamlit](https://streamlit.io) es una librería de Python que permite la creación de aplicaciones web interactivas, basadas en datos de Python .')
 
 st.sidebar.header('Recursos')
 st.sidebar.markdown('''
@@ -49,10 +49,11 @@ st.sidebar.markdown('''
 ''')
 
 st.sidebar.header('Despliegue')
-st.sidebar.markdown('Tu puedes desplegar rapidamente aplicaciones Streamlit usando [Streamlit Cloud](https://streamlit.io/cloud) in just a few clicks.')
+st.sidebar.markdown('Tu puedes desplegar rápidamente aplicaciones Streamlit usando [Streamlit Cloud](https://streamlit.io/cloud) en solo algunos clicks.')
 
 # Display content
-for i in days_list:
+for i, v in days_list:
+    print((i, v))
     if selected_day == i:
         st.markdown(f'# 🗓️ {i}')
         j = i.replace(' ', '')
