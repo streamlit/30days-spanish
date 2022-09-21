@@ -1,35 +1,35 @@
-# The Art of Creating Streamlit Apps
+# El arte de crear aplicaciones Streamlit
 
-Today's Day 30 of the *#30DaysOfStreamlit* challenge. Congratulations on making this far in the challenge.
+Hoy es el día 30 del desafío *#30DaysOfStreamlit*. Felicitaciones por llegar tan lejos en el desafío.
 
-In this tutorial, we're going to put our newfound knowledge from this learning challenge to create Streamlit apps to solve real-world problem.
+En este tutorial, vamos a poner nuestro nuevo conocimiento de Streamlit para resolver problemas del mundo real.
 
-## Real-world problem
+## Problema del mundo real
 
-As a content creator, having access to thumbnail images from YouTube videos are useful resources for social promotion and content creation.
+Como creador de contenido, tener acceso a las imágenes en miniatura de los videos de YouTube son recursos útiles para la promoción social y la creación de contenido.
 
-Let's figure out how we're going to tackle this problem and build a Streamlit app.
+Averigüemos cómo vamos a abordar este problema y crear una aplicación Streamlit.
 
-## Solution
+## Solución
 
-Today, we're going to build `yt-img-app`, which is a Streamlit app that can extract thumbnail images from YouTube videos.
+Hoy, vamos a crear `yt-img-app`, que es una aplicación Streamlit que puede extraer imágenes en miniatura de videos de YouTube.
 
-In a nutshell, here's the 3 simple steps that we want the Streamlit app to do:
+En pocas palabras, estos son los 3 pasos simples que queremos que haga la aplicación Streamlit:
 
-1. Accept a YouTube URL as input from users
-2. Perform text processing of the URL to extract the unique YouTube video ID
-3. Use the YouTube video ID as an input to a custom function that retrieves and displays the thumbnail image from YouTube videos
+1. Aceptar una URL de YouTube como entrada de los usuarios
+2. Realice el procesamiento de texto de la URL para extraer la identificación única del video de YouTube
+3. Use el ID del video de YouTube como argumento para una función que recupera y muestra la imagen en miniatura
 
-## Instructions
+## Instrucciones
 
-To get started in using the Streamlit app, copy and paste a YouTube URL into the input text box.
+Para comenzar a usar la aplicación Streamlit, copie y pegue una URL de YouTube en el campo de texto.
 
 ## Demo app
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/yt-img-app/)
 
-## Code
-Here's how to build the `yt-img-app` Streamlit app:
+## Código
+Aquí se explica cómo construir la aplicación Streamlit `yt-img-app`:
 ```python
 import streamlit as st
 
@@ -65,18 +65,18 @@ else:
   st.write('☝️ Enter URL to continue ...')
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## Explicación línea por línea
+Lo primero que debe hacer al crear una aplicación Streamlit es comenzar importando la biblioteca `streamlit` como `st` de la siguiente manera:
 ```python
 import streamlit as st
 ```
 
-Next, we display the app's title and accompanying header:
+A continuación, mostramos el título de la aplicación y el encabezado que lo acompaña:
 ```python
 st.title('🖼️ yt-img-app')
 st.header('YouTube Thumbnail Image Extractor App')
 ```
-While we're at it, we'll might as well throw in an About expandable box.
+Mientras estamos en eso, también podríamos agregar un cuadro expandible.
 ```python
 with st.expander('About this app'):
   st.write('This app retrieves the thumbnail image from a YouTube video.')
@@ -90,12 +90,12 @@ selected_img_quality = st.sidebar.selectbox('Select image quality', ['Max', 'Hig
 img_quality = img_dict[selected_img_quality]
 ```
 
-An input text box is displayed to accept user input on the YouTube video URL to use for extracting the image from.
+Se muestra un campo de texto para aceptar la URL del video de YouTube para luego extraer la imagen.
 ```python
 yt_url = st.text_input('Paste YouTube URL', 'https://youtu.be/JwSS70SZdyM')
 ```
 
-A custom function for performing text processing of the input URL.
+Una función para realizar el procesamiento de texto de la URL.
 ```python
 def get_ytid(input_url):
   if 'youtu.be' in input_url:
@@ -105,7 +105,7 @@ def get_ytid(input_url):
   return ytid
 ```
 
-Finally, we use flow control to determine whether to display a reminder to enter the URL (i.e. as in the `else` statement) or to display the YouTube thumbnail image (i.e. as in the `if` statement).
+Finalmente, usamos el control de flujo para determinar si mostrar un recordatorio para ingresar la URL (es decir, como en la declaración `else`) o mostrar la imagen en miniatura de YouTube (es decir, como en la declaración `if`).
 ```python
 # Display YouTube thumbnail image
 if yt_url != '':
@@ -118,10 +118,10 @@ else:
   st.write('☝️ Enter URL to continue ...')
 ```
 
-## Summary
+## Resumen
 
-In summary, we have seen that in the creation of any Streamlit app, we normally start by first identifying and defining the problem. Next, we devise a solution to tackle the problem by breaking it down into the granular steps, which we implement in the Streamlit app. 
+En resumen, hemos visto que en la creación de cualquier aplicación Streamlit, normalmente comenzamos primero identificando y definiendo el problema. A continuación, ideamos una solución para abordar el problema dividiéndola en pasos granulares, que implementamos en la aplicación Streamlit.
 
-Here, we also have to determine which data or information that we need as input from users, the approach and method to use in processing the user input in order to produce the final desired output.
+Aquí, también tenemos que determinar qué datos o información necesitamos, el enfoque y el método a utilizar en el procesamiento de la información del usuario para obtener el resultado final deseado.
 
-Hope you enjoyed this tutorial, Happy Streamlit-ing!
+Espero que hayas disfrutado este tutorial, ¡Feliz Streamlit-ing!
