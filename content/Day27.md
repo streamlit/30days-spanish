@@ -1,52 +1,52 @@
-# Build a draggable and resizable dashboard with Streamlit Elements
+# Cree un tablero que se pueda arrastrar y cambiar de tamaño con Streamlit Elements
 
-Streamlit Elements is a third-party component made by [okld](https://github.com/okld) that gives you the tools to compose beautiful applications and dashboards with Material UI widgets, Monaco editor (Visual Studio Code), Nivo charts, and more.
+Streamlit Elements es un componente de terceros creado por [okld](https://github.com/okld) que le brinda las herramientas para crear hermosas aplicaciones y tableros con componentes de Material UI, Monaco editor (Visual Studio Code), Nivo charts , y más.
 
-## How to use?
+## Como usarlo?
 
-### Installation
+### Instalacion
 
-The first step is to install Streamlit Elements in your environment:
+El primer paso es instalar Streamlit Elements en su entorno:
 
 ```bash
 pip install streamlit-elements==0.1.*
 ```
 
-It is recommended to pin the version to `0.1.*`, as future versions might introduce breaking API changes.
+Se recomienda fijar la versión a `0.1.*`, ya que las versiones futuras pueden introducir cambios importantes en la API.
 
-### Usage
+### Uso
 
-You can refer to [Streamlit Elements README](https://github.com/okld/streamlit-elements#getting-started) for an in-depth usage guide.
+Puede consultar [Streamlit Elements README](https://github.com/okld/streamlit-elements#getting-started) para obtener una instrucciones detalladas.
 
-## What are we building?
+## Qué estamos construyendo?
 
-The goal of today's challenge is to create a dashboard composed of three Material UI cards:
+El objetivo del desafío de hoy es crear un tablero compuesto por tres tarjetas de IU de material:
 
-- A first card with a Monaco code editor to input some data ;
-- A second card to display that data in a Nivo Bump chart ;
-- A third card to show a YouTube video URL defined with a `st.text_input`.
+- Una primera tarjeta con Monaco editor para completar algunos datos;
+- Una segunda tarjeta para mostrar esos datos en un gráfico Nivo Bump;
+- Una tercera tarjeta para mostrar una URL de video de YouTube definida con `st.text_input`.
 
-You can use data generated from Nivo Bump demo there, in 'data' tab: https://nivo.rocks/bump/.
+Puede usar los datos generados a partir de la demostración de Nivo Bump, en la pestaña 'datos': https://nivo.rocks/bump/.
 
 ## Demo app
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/okld/streamlit-elements-demo/main)
 
-## Code with line-by-line explanation
+## Código con explicación línea por línea
 
 ```python
-# First, we will need the following imports for our application.
+# Primero, necesitaremos las siguientes librerias para nuestra aplicación.
 
 import json
 import streamlit as st
 from pathlib import Path
 
-# As for Streamlit Elements, we will need all these objects.
-# All available objects and there usage are listed there: https://github.com/okld/streamlit-elements#getting-started
+# En cuanto a Streamlit Elements, necesitaremos todos estos objetos.
+# Todos los objetos disponibles y su uso se enumeran aquí: https://github.com/okld/streamlit-elements#getting-started
 
 from streamlit_elements import elements, dashboard, mui, editor, media, lazy, sync, nivo
 
-# Change page layout to make the dashboard take the whole page.
+# Cambie el diseño de la página para que el tablero ocupe toda la página.
 
 st.set_page_config(layout="wide")
 
@@ -59,106 +59,106 @@ with st.sidebar:
     # Define URL for media player.
     media_url = st.text_input("Media URL", value="https://www.youtube.com/watch?v=vIQQR_yq-8I")
 
-# Initialize default data for code editor and chart.
+# Inicialice los datos predeterminados para el editor de código y el gráfico.
 #
-# For this tutorial, we will need data for a Nivo Bump chart.
-# You can get random data there, in tab 'data': https://nivo.rocks/bump/
+# Para este tutorial, necesitaremos datos para un gráfico Nivo Bump.
+# Puede obtener datos aleatorios aquí, en la pestaña 'datos': https://nivo.rocks/bump/
 #
-# As you will see below, this session state item will be updated when our
-# code editor change, and it will be read by Nivo Bump chart to draw the data.
+# Como verá a continuación, este elemento de estado de sesión se actualizará cuando nuestro
+# editor de código cambie, y el gráfico Nivo Bump lo leerá para dibujar los datos.
 
 if "data" not in st.session_state:
     st.session_state.data = Path("data.json").read_text()
 
-# Define a default dashboard layout.
-# Dashboard grid has 12 columns by default.
+# Defina un diseño de tablero predeterminado.
+# La grilla tiene 12 columnas por defecto.
 #
-# For more information on available parameters:
+# Para obtener más información sobre los parámetros disponibles:
 # https://github.com/react-grid-layout/react-grid-layout#grid-item-props
 
 layout = [
-    # Editor item is positioned in coordinates x=0 and y=0, and takes 6/12 columns and has a height of 3.
+    # El elemento del editor se coloca en las coordenadas x=0 e y=0, ocupa 6/12 columnas y tiene una altura de 3.
     dashboard.Item("editor", 0, 0, 6, 3),
-    # Chart item is positioned in coordinates x=6 and y=0, and takes 6/12 columns and has a height of 3.
+    # El elemento del gráfico se coloca en las coordenadas x=6 e y=0, ocupa 6/12 columnas y tiene una altura de 3.
     dashboard.Item("chart", 6, 0, 6, 3),
-    # Media item is positioned in coordinates x=0 and y=3, and takes 6/12 columns and has a height of 4.
+    # El elemento multimedia se coloca en las coordenadas x=0 e y=3, ocupa 6/12 columnas y tiene una altura de 4.
     dashboard.Item("media", 0, 2, 12, 4),
 ]
 
-# Create a frame to display elements.
+# Crea un marco para mostrar elementos.
 
 with elements("demo"):
 
-    # Create a new dashboard with the layout specified above.
+    # Cree un nuevo panel con el diseño especificado anteriormente.
     #
-    # draggableHandle is a CSS query selector to define the draggable part of each dashboard item.
-    # Here, elements with a 'draggable' class name will be draggable.
+    # draggableHandle es un selector de CSS que define la parte que se puede arrastrar de cada elemento del tablero.
+    # Aquí, los elementos con un nombre de clase 'draggable' serán arrastrables.
     #
-    # For more information on available parameters for dashboard grid:
+    # Para obtener más información sobre los parámetros disponibles:
     # https://github.com/react-grid-layout/react-grid-layout#grid-layout-props
     # https://github.com/react-grid-layout/react-grid-layout#responsive-grid-layout-props
 
     with dashboard.Grid(layout, draggableHandle=".draggable"):
 
-        # First card, the code editor.
+        # Primera tarjeta, el editor de código.
         #
-        # We use the 'key' parameter to identify the correct dashboard item.
+        # Utilizamos el parametro `key` para identificar el elemento correcto
         #
-        # To make card's content automatically fill the height available, we will use CSS flexbox.
-        # sx is a parameter available with every Material UI widget to define CSS attributes.
+        # Para hacer que el contenido de la tarjeta llene automáticamente la altura disponible, usaremos CSS flexbox.
+        # sx es un parámetro disponible con cada componente de Material UI para definir atributos CSS.
         #
-        # For more information regarding Card, flexbox and sx:
+        # Para más información sobre Card, flexbox y sx:
         # https://mui.com/components/cards/
         # https://mui.com/system/flexbox/
         # https://mui.com/system/the-sx-prop/
 
         with mui.Card(key="editor", sx={"display": "flex", "flexDirection": "column"}):
 
-            # To make this header draggable, we just need to set its classname to 'draggable',
-            # as defined above in dashboard.Grid's draggableHandle.
+            # Para hacer que este encabezado se pueda arrastrar, solo necesitamos establecer su nombre de clase en 'draggable',
+            # como se definió anteriormente en dashboard.Grid's draggableHandle.
 
             mui.CardHeader(title="Editor", className="draggable")
 
-            # We want to make card's content take all the height available by setting flex CSS value to 1.
-            # We also want card's content to shrink when the card is shrinked by setting minHeight to 0.
+            # Queremos hacer que el contenido de la tarjeta tome toda la altura disponible configurando el valor de CSS flex en 1.
+            # También queremos que el contenido de la tarjeta se reduzca cuando la tarjeta se encoja al establecer minHeight en 0.
 
             with mui.CardContent(sx={"flex": 1, "minHeight": 0}):
 
-                # Here is our Monaco code editor.
+                # Aquí está nuestro editor de código de Monaco.
                 #
-                # First, we set the default value to st.session_state.data that we initialized above.
-                # Second, we define the language to use, JSON here.
+                # Primero, establecemos el valor predeterminado en st.session_state.data que inicializamos anteriormente.
+                # Segundo, definimos el lenguaje a usar, JSON.
                 #
-                # Then, we want to retrieve changes made to editor's content.
-                # By checking Monaco documentation, there is an onChange property that takes a function.
-                # This function is called everytime a change is made, and the updated content value is passed in
-                # the first parameter (cf. onChange: https://github.com/suren-atoyan/monaco-react#props)
+                # Luego, queremos recuperar los cambios realizados en el contenido del editor.
+                # Al verificar la documentación de Monaco, hay una propiedad onChange que toma una función.
+                # Esta función se llama cada vez que se realiza un cambio, y el valor del contenido actualizado se pasa en
+                # el primer parametro (onChange: https://github.com/suren-atoyan/monaco-react#props)
                 #
-                # Streamlit Elements provide a special sync() function. This function creates a callback that will
-                # automatically forward its parameters to Streamlit's session state items.
+                # Streamlit Elements proveé una funcion especial sync(). Esta funcion crea un Callback
+                # automaticamente redirecciona sus parametros al estado de sesion de Streamlit.
                 #
-                # Examples
+                # Ejemplos
                 # --------
-                # Create a callback that forwards its first parameter to a session state item called "data":
+                # Cree un Callback que reenvíe su primer parámetro a un elemento del estado de sesión llamado "data":
                 # >>> editor.Monaco(onChange=sync("data"))
                 # >>> print(st.session_state.data)
                 #
-                # Create a callback that forwards its second parameter to a session state item called "ev":
+                # Cree un Callback que reenvíe su segundo parámetro a un elemento del estado de sesión llamado "ev":
                 # >>> editor.Monaco(onChange=sync(None, "ev"))
                 # >>> print(st.session_state.ev)
                 #
-                # Create a callback that forwards both of its parameters to session state:
+                # Cree un Callback que reenvíe sus dos parámetros al estado:
                 # >>> editor.Monaco(onChange=sync("data", "ev"))
                 # >>> print(st.session_state.data)
                 # >>> print(st.session_state.ev)
                 #
-                # Now, there is an issue: onChange is called everytime a change is made, which means everytime
-                # you type a single character, your entire Streamlit app will rerun.
+                # Ahora, hay un problema: se llama a onChange cada vez que se realiza un cambio, lo que significa que cada vez
+                # que escribe un solo carácter, toda su aplicación Streamlit se volverá a ejecutar.
                 #
-                # To avoid this issue, you can tell Streamlit Elements to wait for another event to occur
-                # (like a button click) to send the updated data, by wrapping your callback with lazy().
+                # Para evitar este problema, puede decirle a Streamlit Elements que espere a que ocurra otro evento
+                # (como un clic de botón) para enviar los datos actualizados, envolviendo su devolución de llamada con lazy().
                 #
-                # For more information on available parameters for Monaco:
+                # Para obtener más información sobre Monaco:
                 # https://github.com/suren-atoyan/monaco-react
                 # https://microsoft.github.io/monaco-editor/api/interfaces/monaco.editor.IStandaloneEditorConstructionOptions.html
 
@@ -170,43 +170,45 @@ with elements("demo"):
 
             with mui.CardActions:
 
-                # Monaco editor has a lazy callback bound to onChange, which means that even if you change
-                # Monaco's content, Streamlit won't be notified directly, thus won't reload everytime.
-                # So we need another non-lazy event to trigger an update.
+                # Monaco editor tiene un Lazy Callback atado al onChange, lo que significa que incluso si cambias
+                # el contenido de Monaco, Streamlit no va a ser notificado directamente, lo que previene que se recargue todo el tiempo.
+                # Entonces necesitamos otro evento para iniciar la actualización.
                 #
-                # The solution is to create a button that fires a callback on click.
-                # Our callback doesn't need to do anything in particular. You can either create an empty
-                # Python function, or use sync() with no argument.
+                # La solucion es crear un botón que dispare un Callback al hacer click.
+                # 
+                # Nuestro callback no necesita hacer nada en particular. Tu puedes incluso crear una
+                # funcion vacia de Python, o utilizar sync() sin ningún argumento.
                 #
                 # Now, everytime you will click that button, onClick callback will be fired, but every other
-                # lazy callbacks that changed in the meantime will also be called.
+                # Ahora, cada vez que hagas click en ese botón, el callback de onClick va a ser iniciado, pero
+                # cualquier otro lazy callback que cambió va a ser tambien llamado. 
 
                 mui.Button("Apply changes", onClick=sync())
 
-        # Second card, the Nivo Bump chart.
-        # We will use the same flexbox configuration as the first card to auto adjust the content height.
+        # Segunda tarjeta, el gráfico Nivo Bump.
+        # Usaremos la misma configuración de flexbox que la primera tarjeta para ajustar automáticamente la altura del contenido.
 
         with mui.Card(key="chart", sx={"display": "flex", "flexDirection": "column"}):
 
-            # To make this header draggable, we just need to set its classname to 'draggable',
-            # as defined above in dashboard.Grid's draggableHandle.
+            # Para hacer que este encabezado se pueda arrastrar, solo necesitamos establecer su nombre de clase en 'draggable',
+            # como se definió anteriormente en dashboard.Grid's draggableHandle.
 
             mui.CardHeader(title="Chart", className="draggable")
 
-            # Like above, we want to make our content grow and shrink as the user resizes the card,
-            # by setting flex to 1 and minHeight to 0.
+            # Como arriba, queremos que nuestro contenido crezca y se reduzca a medida que el usuario cambia el tamaño de la tarjeta,
+            # configurando flex en 1 y minHeight en 0.
 
             with mui.CardContent(sx={"flex": 1, "minHeight": 0}):
 
-                # This is where we will draw our Bump chart.
+                # Aquí es donde dibujaremos nuestro gráfico Bump.
                 #
-                # For this exercise, we can just adapt Nivo's example and make it work with Streamlit Elements.
-                # Nivo's example is available in the 'code' tab there: https://nivo.rocks/bump/
+                # Para este ejercicio, podemos simplemente adaptar el ejemplo de Nivo y hacer que funcione con Streamlit Elements.
+                # El ejemplo de Nivo está disponible en la pestaña 'code': https://nivo.rocks/bump/
                 #
-                # Data takes a dictionary as parameter, so we need to convert our JSON data from a string to
-                # a Python dictionary first, with `json.loads()`.
+                # Los datos toman un diccionario como parámetro, por lo que necesitamos convertir nuestros datos JSON de una cadena a
+                # un diccionario Python, con `json.loads()`.
                 #
-                # For more information regarding other available Nivo charts:
+                # Para obtener más información sobre Nivo:
                 # https://nivo.rocks/
 
                 nivo.Bump(
@@ -251,19 +253,19 @@ with elements("demo"):
                     axisRight=None,
                 )
 
-        # Third element of the dashboard, the Media player.
+        # Tercer elemento del tablero, el reproductor multimedia.
 
         with mui.Card(key="media", sx={"display": "flex", "flexDirection": "column"}):
             mui.CardHeader(title="Media Player", className="draggable")
             with mui.CardContent(sx={"flex": 1, "minHeight": 0}):
 
-                # This element is powered by ReactPlayer, it supports many more players other
-                # than YouTube. You can check it out there: https://github.com/cookpete/react-player#props
+                # Este elemento funciona con ReactPlayer, es compatible con muchos otros reproductores
+                # además de YouTube. Puedes verificarlo aquí: https://github.com/cookpete/react-player#props
 
                 media.Player(url=media_url, width="100%", height="100%", controls=True)
 
 ```
 
-## Any question?
+## Alguna pregunta?
 
-Feel free to ask any question regarding Streamlit Elements or this challenge there: [Streamlit Elements Topic](https://discuss.streamlit.io/t/streamlit-elements-build-draggable-and-resizable-dashboards-with-material-ui-nivo-charts-and-more/24616)
+No dude en hacer cualquier pregunta sobre Streamlit Elements o este desafío aquí: [Streamlit Elements Topic](https://discuss.streamlit.io/t/streamlit-elements-build-draggable-and-resizable-dashboards-with-material-ui-nivo-charts-and-more/24616)
