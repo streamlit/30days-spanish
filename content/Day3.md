@@ -76,7 +76,7 @@ Es importante tener en cuenta que los `st.write` están colocados debajo de las 
 
 ## Siguientes pasos
 
-Ahora que has creado la app localmente, es hora de desplegarla en [Streamlit Cloud](https://streamlit.io/cloud) como lo vamos a mencionar en un próximo desafío.
+Ahora que has creado la app localmente, es hora de desplegarla en [Streamlit Community Cloud](https://streamlit.io/cloud) como lo vamos a mencionar en un próximo desafío.
 
 Como esta es la primer semana de tu desafío, nosotros proveemos el código completo (como es mostrado en el código anterior) y la solución (la app de ejemplo) dentro de esta web.
 

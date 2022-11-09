@@ -32,7 +32,7 @@ Finalmente, mostraremos los secretos almacenados:
 st.write(st.secrets['message'])
 ```
 
-Cabe señalar que los secretos se pueden almacenar en Streamlit Cloud como se ve en las capturas de pantalla que se muestran a continuación.
+Cabe señalar que los secretos se pueden almacenar en Streamlit Community Cloud como se ve en las capturas de pantalla que se muestran a continuación.
 
 Si esta trabajando localmente, pueden ser almacenadas en `.streamlit/secrets.toml`, pero asegúrese evitar subir esto al repositorio de GitHub. 
 

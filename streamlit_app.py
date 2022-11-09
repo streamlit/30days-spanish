@@ -49,7 +49,7 @@ st.sidebar.markdown('''
 ''')
 
 st.sidebar.header('Despliegue')
-st.sidebar.markdown('Tu puedes desplegar rápidamente aplicaciones Streamlit usando [Streamlit Cloud](https://streamlit.io/cloud) en solo algunos clicks.')
+st.sidebar.markdown('Tu puedes desplegar rápidamente aplicaciones Streamlit usando [Streamlit Community Cloud](https://streamlit.io/cloud) en solo algunos clicks.')
 
 # Display content
 for i in days_list:
