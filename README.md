@@ -8,9 +8,9 @@ Este es el repositorio oficial de `#30DaysOfStreamlit` - una competencia de 30 d
 
 Todo lo que necesitas para participar es una computadora, conocimientos básicos de Python, y tu curiosidad. 🧠
 
-Un nuevo desafío is liberado diariamente por medio de [Twitter](https://twitter.com/streamlit) y [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) como también en la aplicación de [`#30DaysOfStreamlit`](https://share.streamlit.io/streamlit/30days/).
+Un nuevo desafío is liberado diariamente por medio de [Twitter](https://twitter.com/streamlit) y [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) como también en la aplicación de [`#30DaysOfStreamlit`](https://30days-in-spanish.streamlitapp.com/).
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/streamlit/30days/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-in-spanish.streamlitapp.com/)
 
 Completa los desafíos diarios, compartí tus soluciones con nosotros en Twitter o LinkedIn, y obtendrás geniales premios de Streamlit 😎
 
